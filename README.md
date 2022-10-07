@@ -27,6 +27,9 @@ El cliente solicita una página web donde sus clientes puedan crear demandas y e
 #### ***Diagrama de flujo***
 <img width="1645" alt="Diagrama de flujo abogabot r" src="https://user-images.githubusercontent.com/114373231/194653448-1058236c-9141-492f-86a6-0a558954c93f.png">
 
+#### ***Documento de requerimientos***
+---
+
 ## **2. Buyer Persona**
 
 ![BuyerP1](https://user-images.githubusercontent.com/114373231/194653242-ea823ae6-f78a-4b77-b8e8-40f9d260f2ff.png)
