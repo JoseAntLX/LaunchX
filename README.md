@@ -23,3 +23,6 @@ El cliente solicita una página web donde sus clientes puedan crear demandas y e
 #### ***Otros***
 - La página debe ser responsive
 - Preferencia de colores: blanco y azul marino
+
+## **2. Buyer Persona**
+
