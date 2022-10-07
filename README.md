@@ -26,7 +26,7 @@ El cliente solicita una página web donde sus clientes puedan crear demandas y e
 
 ## **2. Buyer Persona**
 
-[Buyer Persona.pdf](https://github.com/JoseAntLX/PracticasLaunchX/files/9737315/Buyer.Persona.pdf)
+![BuyerP1](https://user-images.githubusercontent.com/114373231/194653242-ea823ae6-f78a-4b77-b8e8-40f9d260f2ff.png)
 
 ## **3. Público Objetivo**
 
