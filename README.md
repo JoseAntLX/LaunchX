@@ -3,25 +3,25 @@ Espacio para subir todas las asignaciones de Launch X
 
 ## **1. Toma de requerimentos.**
 
-El cliente solicita una página web donde sus clientes puedan crear demandas y el pueda ver y seguir el proceso de cada una manteniendo informado a los clientes.
+- El cliente solicita una página web donde sus clientes puedan crear demandas y el pueda ver y seguir el proceso de cada una manteniendo informado a los clientes.
 
-#### ***Usuario***
-- Login y registro de cuentas
-- Creación de demandas mediante formulario
-- Proceso de pago
-- Seguimiento de demandas
-- Creación de documento
-- Notificación y correos de avance
+- Es un despacho de abogados que quiere automatizar las demandas de sus clientes, esto lo harán a traves de una página web llenando un formulario.
 
-#### ***Administrador***
-- Login y registro de cuentas
-- Dashboard de ingresos
-- Notificación de nueva demanda
-- Actualización y comentarios de demandas
+- Al momento de llenar el formulario se manda al proceso de pago para finalizar la transacción.
 
-#### ***Otros***
-- La página debe ser responsive
-- Preferencia de colores: blanco y azul marino
+- Para dar seguimiento a su demanda, el cliente crea una cuenta en la plataforma y verá el seguimiento de cada una de las actualizaciones del proceso legal.
+
+- El administrador del sitio recbe la notificación de una nueva demanda y con los datos llenados del formulario se crea automaticamente el documento legal en formato word para empezar el proceso.
+
+- El administrador recibe el pago y debe de ser capaz de verlo en un dashboard para ver la cantidad de ingresos recibidos.
+
+- El administrador actualiza el proceso de la demanda y agrega comentarios en cada paso del proceso.
+
+- Al usuario le llegan correos de notificación para saber el avance de su proceso.
+
+- La página debe de ser responsive para poderla ver desde el celular.
+
+- La preferncia de colores del cliente es azul marino y blanco, pero acepta propuestas.
 
 #### ***Diagrama de flujo***
 <img width="1645" alt="Diagrama de flujo abogabot r" src="https://user-images.githubusercontent.com/114373231/194653448-1058236c-9141-492f-86a6-0a558954c93f.png">
