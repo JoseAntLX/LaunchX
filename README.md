@@ -23,6 +23,10 @@ Espacio para subir todas las asignaciones de Launch X
 
 - La preferncia de colores del cliente es azul marino y blanco, pero acepta propuestas.
 
+#### ***Diagrama de contexto***
+![Diagrama de contexto AB](https://user-images.githubusercontent.com/114373231/195641383-301d3e53-f731-46b7-9f97-fd39758a71c0.jpg)
+
+
 #### ***Diagrama de flujo***
 <img width="1645" alt="Diagrama de flujo abogabot r" src="https://user-images.githubusercontent.com/114373231/194653448-1058236c-9141-492f-86a6-0a558954c93f.png">
 
