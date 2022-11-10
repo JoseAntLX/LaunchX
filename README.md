@@ -31,7 +31,7 @@ Espacio para subir todas las asignaciones de Launch X
 <img width="1645" alt="Diagrama de flujo abogabot r" src="https://user-images.githubusercontent.com/114373231/194653448-1058236c-9141-492f-86a6-0a558954c93f.png">
 
 #### ***Documento de requerimientos***
--- [Requerimientos](Documento Requerimientos Abogabot/1Requerimientos.doc)
+-- [Requerimientos](Documento Requerimientos Abogabot/)
 
 ## **2. Buyer Persona**
 
