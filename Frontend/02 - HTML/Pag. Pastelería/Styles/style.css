@@ -44,23 +44,15 @@ header {
 
 /* Imagen del logo */
 .img-lg {
-    margin: 0px 10px;
-    height: 200px;
-    width: 200px;
-    border-radius: 100px;
-}
-
-/* Texto del logo */
-.text-lg {
-    margin-bottom: 7px;
-    font-size: large;
+    height: 160px;
+    width: 160px;
 }
 
 /* Texto logo h4 */
 .text-lg>h4 {
     font-family: Vladimir Script;
     font-weight: lighter;
-    font-size: 50px;
+    font-size: 40px;
 }
 
 /* Menu de navegacion */
@@ -72,13 +64,29 @@ nav {
     align-items: center;
 }
 
+/* Pestaña actual */
+.actual{
+    background-size: 100% 2px;
+}
+
 /* Enlaces del nav */
 nav>a {
+    text-decoration: none;
+    background-image: linear-gradient(currentColor, currentColor);
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    transition: background-size .3s;
     color: #574029;
     font-size: large;
     margin-right: 20px;
     text-decoration: none;
 }
+
+nav>a:hover, nav>a:focus {
+    background-size: 100% 2px;
+}
+
 
 nav>a:hover{
     font-size: larger;
@@ -125,8 +133,6 @@ nav>a:hover{
 
 /* Texto Parrafo */
 .q-p-text {
-    /* margin: 20px 90px 20px 60px;
-    align-self: center; */
     width: 40%;
 }
 
@@ -218,7 +224,6 @@ nav>a:hover{
 #precio {
     margin-left: 5%;
     color: #452c4e;
-    align-self: flex-end;
 }
 
 /* Encabezado */
@@ -325,4 +330,36 @@ footer{
 /* Imgs logos */
 .logos-redes>a>img{
     width: 40px;
+}
+
+/* --------------------------------------------------------- */
+/*                          Pagina productos */
+/* --------------------------------------------------------- */
+
+/* Main */
+.p-main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Encabezado p */
+.p-head-prods{
+    text-align: center;
+    margin: 3% 0;
+}
+
+/* Seccion productos */
+.p-productos{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    margin: 0 20%;
+}
+
+/* Producto 1 */
+
+.p-prod-1{
+    width: 10%;
+    height: 10%;
 }
