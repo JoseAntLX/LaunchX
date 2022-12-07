@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pastelería Dulce</title>
+    <link rel="stylesheet" href="Styles/style.css">
+</head>
+
+<body>
+    <!-- Encabezado -->
+    <header>
+
+        <!-- Logo -->
+        <a class="logo-link" href="#">
+
+            <!-- Imagen del logo -->
+            <img class="img-lg" src="./Imgs/Dulce-removebg-preview.png" alt="logoDulce">
+
+            <!-- Slogan -->
+            <div class="text-lg">
+                <h4>Endulza tu alma</h4>
+            </div>
+        </a>
+
+        <!-- Barra de navegacion -->
+        <nav>
+            <a href="./index.html">Inicio</a>
+            <a href="./index.html#quienes-s">¿Quiénes somos?</a>
+            <a href="./productos.html">Productos</a>
+            <a href="#">Contáctanos</a>
+            <a class="actual" href="#">Pedidos</a>
+        </nav>
+
+    </header>
+
+    <main class="ped-main">
+        <form class="form-pedido" name="form-pedido" action="">
+            
+            <!-- Imagen de fondo -->
+            <img src="./Imgs/circle-scatter-haikei.png" alt="circulos" class="bg-img-form">
+
+            <h1 class="ped-form-title">Mi pedido</h1>
+            
+            <h3 class="head-datos-cliente">Datos del cliente</h3>
+
+            <!-- Nombre -->
+            <label class="inp" for="nombre" id="nombre">
+                <input class="imp-nom" name="nombre" id="inp" type="text" required>
+                <span class="label">Nombre</span>
+                <span class="focus-bg"></span>
+            </label>
+
+            <div class="nom-tel">
+                <!-- Telefono -->
+                <label class="inp" for="tel" id="tel">
+                    <input class="inp-tel" name="tel" id="inp" type="tel" required>
+                    <span class="label">Telefono</span>
+                    <span class="focus-bg"></span>
+                </label>
+
+
+                <!-- Correo -->
+                <label class="inp" for="email" id="email">
+                    <input class="inp-email" name="email" id="email" type="email" required>
+                    <span class="label">Email</span>
+                    <span class="focus-bg"></span>
+                </label>
+            </div>
+
+            <h3 class="head-datosped">Datos del pedido</h3>
+
+            <div class="bizch-rell">
+
+                <!-- sabor del bizcocho -->
+                <section class="sabor-bizch">
+                    <h4 class="head-sab-biz">Sabores del bizcocho</h4>
+
+                    <div class="choc">
+                        <input type="checkbox" name="sabor-b" id="chocolate">
+                        <label for="chocolate">Chocolate</label>
+                    </div>
+
+                    <div class="vain">
+                        <input type="checkbox" name="sabor-b" id="vainilla">
+                        <label for="vainilla">vainilla</label>
+                    </div>
+
+                    <div class="fres">
+                        <input type="checkbox" name="sabor-b" id="fresa">
+                        <label for="fresa">Fresa</label>
+                    </div>
+
+                    <div class="lim">
+                        <input type="checkbox" name="sabor-b" id="limon">
+                        <label for="limon">Limón</label>
+                    </div>
+
+                </section>
+
+                <!-- sabor del relleno -->
+                <section class="sabor-relleno">
+                    <h4 class="head-sab-biz">Sabores del relleno</h4>
+
+                    <div class="merm">
+                        <input type="checkbox" name="sabor-r" id="mermelada">
+                        <label for="mermelada">Mermelada</label>
+                    </div>
+
+                    <div class="gan">
+                        <input type="checkbox" name="sabor-r" id="ganache">
+                        <label for="ganache">Ganache</label>
+                    </div>
+
+                    <div class="crem">
+                        <input type="checkbox" name="sabor-r" id="cremabat">
+                        <label for="cremabat">Crema para batir</label>
+                    </div>
+
+                </section>
+            </div>
+
+            <!-- cubiertas y decoraciones -->
+            <section class="cub-decs">
+                <h4 class="head-sab-biz">Cubiertas y decoraciones</h4>
+
+                <div class="car">
+                    <input type="checkbox" name="cub-decoraciones" id="caramelo">
+                    <label for="caramelo">Caramelo suave</label>
+
+                </div>
+                <div class="frut">
+                    <input type="checkbox" name="cub-decoraciones" id="frutas">
+                    <label for="frutas">Frutas</label>
+                </div>
+
+                <div class="cha">
+                    <input type="checkbox" name="cub-decoraciones" id="chantilly">
+                    <label for="chantilly">Chantilly</label>
+                </div>
+
+                <div class="mer">
+                    <input type="checkbox" name="cub-decoraciones" id="merengue">
+                    <label for="merengue">Merengue</label>
+                </div>
+                    
+                <div class="inp-nums">
+                    <div class="pes">
+                        <label for="peso">Libras</label>
+                        <input type="number" name="peso" id="libras">
+                    </div>
+                    <div class="cant">
+                        <label for="peso">Cantidad de pasteles</label>
+                        <input type="number" name="cantidad" id="libras">
+                    </div>
+                </div>
+
+            </section>
+
+
+            <!-- Descripcion general del pastel -->
+            <label class="inp" for="desc" id="desc">
+                <textarea name="desc" class="desc" cols="30" rows="10"></textarea>
+                <span class="label">Descripcion general del pastel</span>
+                <span class="focus-bg"></span>
+            </label>
+
+            <!-- Boton -->
+            <button id="btn-enviar" class="btn-pedir" type="submit">
+                <span class="button_top"> Enviar
+                </span>
+            </button>
+
+        </form>
+    </main>
+
+
+    <footer>
+        <div class="foot-els">
+
+            <!-- Tienda -->
+            <div class="col-tienda">
+                <h4 id="enc-foot">Tienda</h4>
+
+                <p><a id="text-footer" href="#">Sobre nosotros</a></p>
+                <p><a id="text-footer" href="#">Envíos / Recogidas</a></p>
+                <p><a id="text-footer" href="#">Política de la tienda</a></p>
+                <p><a id="text-footer" href="#">Contacto</a></p>
+            </div>
+
+            <!-- Horario -->
+            <div class="col-horario">
+                <h4 id="enc-foot">Horario</h4>
+
+                <p id="text-footer">Lun-Vie 8:00 - 21:00</p>
+                <p id="text-footer">Sab 9:00 - 20:00</p>
+                <p id="text-footer">Dom 10:00 - 17:00</p>
+            </div>
+
+            <!-- Direccion -->
+            <div class="col-direccion">
+                <h4 id="enc-foot">Dirección</h4>
+
+                <a id="text-footer" href="https://goo.gl/maps/9ZqZBTdKyQ8hhKXd7" target="_blank"
+                    rel="noopener noreferrer">Av. las Torres
+                    450, Local 1, Quilicura, Región Metropolitana, Chile</a>
+                <p id="text-footer">Teléfono: 829-233-6764</p>
+
+            </div>
+
+            <!-- Redes sociales -->
+            <div class="col-redes">
+                <h4 id="enc-foot">Siguenos en nuestras redes sociales</h4>
+                <div class="logos-redes">
+                    <a href=""><img src="./Imgs/tiktokL.png" alt="Logo tiktok"></a>
+                    <a href=""><img src="./Imgs/instagramL.png" alt="Logo instagram"></a>
+                    <a href=""><img src="./Imgs/facebookL.png" alt="Logo facebook"></a>
+
+                </div>
+            </div>
+
+        </div>
+    </footer>
+</body>
+
+</html>

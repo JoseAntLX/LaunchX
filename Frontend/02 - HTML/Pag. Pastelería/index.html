@@ -8,6 +8,9 @@
     <link rel="shortcut icon" href="./Imgs/icono.ico" type="image/x-icon">
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='./Styles/style.css'>
+    <script src="https://code.jquery.com/jquery-3.6.1.js"
+        integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+    <script src="./Js/main.js" type="text/javascript"></script>
 </head>
 
 <body>
@@ -30,16 +33,19 @@
         <!-- Barra de navegacion -->
         <nav>
             <a class="actual" href="#">Inicio</a>
-            <a href="./productos.html">Productos</a>
             <a href="#quienes-s">¿Quiénes somos?</a>
+            <a href="./productos.html">Productos</a>
             <a href="#">Contáctanos</a>
-            <a href="#">Pedidos</a>
+            <a href="./pedidos.html">Pedidos</a>
         </nav>
-
+        
     </header>
-
+    
     <!-- Parte principal -->
     <main>
+        
+        <a href="./pedidos.html" class="btn-flotante">Hacer mi pedido</a>
+        <a href="./pedidos.html" class="btn-flotante2">Administrador</a>
 
         <!-- Seccion quienes somos -->
         <section class="quienes-somos">
@@ -98,12 +104,13 @@
                             <h4>Cheescake de fresa</h4>
                             <h4 id="precio">$67.3</h4>
                         </div>
-                        <p>Uno de los pasteles de queso más populares es el de fresa, con esta receta podrás lucirte
+                        <p class="desc-prod">Uno de los pasteles de queso más populares es el de fresa, con esta receta
+                            podrás lucirte
                             frente a tus amigos en un evento especial...</p>
 
                         <!-- Boton -->
                         <button class="btn-pedir">
-                            <span class="button_top"> Pedir
+                            <span class="button_top"> <a href="./pedidos.html">Pedir</a>
                             </span>
                         </button>
 
@@ -123,12 +130,13 @@
                             <h4>Tiramisú</h4>
                             <h4 id="precio">$44.8</h4>
                         </div>
-                        <p>¿A quién no le gusta el tiramisú? Tal vez sea el postre italiano más conocido y más
+                        <p class="desc-prod">¿A quién no le gusta el tiramisú? Tal vez sea el postre italiano más
+                            conocido y más
                             reproducido en todas las cocinas del planeta... </p>
 
                         <!-- Boton -->
                         <button class="btn-pedir">
-                            <span class="button_top"> Pedir
+                            <span class="button_top"> <a href="./pedidos.html">Pedir</a>
                             </span>
                         </button>
 
@@ -147,12 +155,13 @@
                             <h4>Imposible</h4>
                             <h4 id="precio">$99.2</h4>
                         </div>
-                        <p>Este delicioso postre consta de un pastel de dos capas: una capa constituida por un flan o
+                        <p class="desc-prod">Este delicioso postre consta de un pastel de dos capas: una capa
+                            constituida por un flan o
                             quesillo y otra de pastel de chocolate...</p>
 
                         <!-- Boton -->
                         <button class="btn-pedir">
-                            <span class="button_top"> Pedir
+                            <span class="button_top"> <a href="./pedidos.html">Pedir</a>
                             </span>
                         </button>
 
@@ -200,12 +209,12 @@
             <!-- Redes sociales -->
             <div class="col-redes">
                 <h4 id="enc-foot">Siguenos en nuestras redes sociales</h4>
-                    <div class="logos-redes">
-                        <a href=""><img src="./Imgs/tiktokL.png" alt="Logo tiktok"></a>
-                        <a href=""><img src="./Imgs/instagramL.png" alt="Logo instagram"></a>
-                        <a href=""><img src="./Imgs/facebookL.png" alt="Logo facebook"></a>
-                        
-                    </div>
+                <div class="logos-redes">
+                    <a href=""><img src="./Imgs/tiktokL.png" alt="Logo tiktok"></a>
+                    <a href=""><img src="./Imgs/instagramL.png" alt="Logo instagram"></a>
+                    <a href=""><img src="./Imgs/facebookL.png" alt="Logo facebook"></a>
+
+                </div>
             </div>
 
         </div>
