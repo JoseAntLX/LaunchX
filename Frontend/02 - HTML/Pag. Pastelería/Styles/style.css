@@ -100,8 +100,10 @@ nav>a:hover {
 /* Boton flotante */
 
 .btn-flotante {
+    display: table;
     text-decoration: none;
     font-size: 14px;
+    margin-right: 5px;
     /* Cambiar el tamaño de la tipografia */
     text-transform: uppercase;
     /* Texto en mayusculas */
@@ -117,27 +119,35 @@ nav>a:hover {
     /* Color de fondo */
     padding: 18px 20px;
     /* Relleno del boton */
-    /* float: right; */
-    /* right: 0; */
+    float: right;
+    margin-bottom: 30px;
     position: sticky;
-    top: 232px;
-    top: 10px;
-    right: 30px;
+    top: 20px;
     transition: all 300ms ease 0ms;
     box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
     z-index: 5;
 }
 
 .btn-flotante:hover {
-    background-color: #d171a6;
+    background-color: #d171a6b7;
     /* Color de fondo al pasar el cursor */
     box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.3);
     transform: translateY(-7px);
 }
 
-/* Boton flotante 2 */
+.prueba{
+    right: 0;
+    text-decoration: none;
+    background-color: #0077FF;
+    color:  white;
+    position: sticky;
+    padding: 20px;
+    z-index: 4;
+}
 
+/* Boton flotante 2 */
 .btn-flotante2 {
+    margin-right: 5px;
     text-decoration: none;
     font-size: 14px;
     /* Cambiar el tamaño de la tipografia */
@@ -146,6 +156,8 @@ nav>a:hover {
     font-weight: bold;
     /* Fuente en negrita o bold */
     color: #ffffff;
+    float: right;
+    clear: right;
     /* Color del texto */
     border-radius: 5px;
     /* Borde del boton */
@@ -156,24 +168,53 @@ nav>a:hover {
     padding: 18px 25px;
     /* Relleno del boton */
     position: sticky;
-    /* top: 300px; */
-    top: 70px;
-    /* right: 30px; */
+    top: 80px;
     transition: all 300ms ease 0ms;
     box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
-    z-index: 5;
+    z-index: 6;
 }
 
 
 .btn-flotante2:hover {
     /* Color de fondo al pasar el cursor */
     box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.3);
+    background-color: rgba(241, 109, 0, 0.637);
     transform: translateY(-7px);
 }
 
 
 /* -----------  Quienes somos --------------*/
 
+.imagen-qs {
+    position: absolute;
+    top: 290px;
+    width: 100%;
+    /* visibility: hidden; */
+}
+
+/* Imagen quienes somos */
+.q-p-img {
+    width: 40%;
+    height: 100%;
+    border-radius: 10px;
+    /* margin: 20px; */
+}
+
+/* Wave */
+.wave {
+    position: absolute;
+    fill: #f3edf8;
+    bottom: 0;
+    width: 100%;
+
+}
+
+/* marco */
+.marco-q-s{
+    /* width: 100%; */
+    position: static;
+    height: 630px;
+}
 
 /* Artículo */
 .quienes-text {
@@ -216,26 +257,6 @@ nav>a:hover {
     width: 40%;
 }
 
-.imagen-qs {
-    position: relative;
-}
-
-/* Imagen quienes somos */
-.q-p-img {
-    width: 40%;
-    height: 100%;
-    border-radius: 10px;
-    /* margin: 20px; */
-}
-
-/* Wave */
-.wave {
-    position: absolute;
-    fill: #f3edf8;
-    bottom: 0;
-    width: 100%;
-
-}
 
 /* ------------------ Mas pedidos ------------------ */
 
@@ -646,26 +667,30 @@ footer {
     z-index: 1;
 }
 
-/* Nombre y tel */
-.nom-tel {
-    display: flex;
-    justify-items: center;
-    width: 80%;
-}
 
 #nombre {
     width: 80%;
 }
 
+/* Nombre y tel */
+.nom-tel {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+}
+
 #tel {
-    width: 70%;
-    margin: 20px 20px 10px 0px;
+    width: 40%;
 }
 
 #email {
-    width: 100%;
-    
+    width: 55%;
 }
+
+#email > input{
+    width: 100%;
+}
+
 
 #desc {
     width: 80%;
