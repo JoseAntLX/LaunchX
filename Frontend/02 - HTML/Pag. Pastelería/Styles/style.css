@@ -135,15 +135,6 @@ nav>a:hover {
     transform: translateY(-7px);
 }
 
-.prueba{
-    right: 0;
-    text-decoration: none;
-    background-color: #0077FF;
-    color:  white;
-    position: sticky;
-    padding: 20px;
-    z-index: 4;
-}
 
 /* Boton flotante 2 */
 .btn-flotante2 {
@@ -210,7 +201,7 @@ nav>a:hover {
 }
 
 /* marco */
-.marco-q-s{
+.marco-q-s {
     /* width: 100%; */
     position: static;
     height: 630px;
@@ -344,7 +335,7 @@ nav>a:hover {
 }
 
 /* Descripcion del producto */
-.desc-prod{
+.desc-prod {
     height: 100%;
 }
 
@@ -640,12 +631,12 @@ footer {
     box-shadow: 0px 12px 20px rgba(0, 0, 0, 0.3);
 }
 
-.form-pedido>* :not(.bg-img-form){
+.form-pedido>* :not(.bg-img-form) {
     z-index: 1;
 }
 
 /* Imagen de fondo */
-.bg-img-form{
+.bg-img-form {
     position: absolute;
     object-fit: cover;
     height: 100%;
@@ -663,7 +654,7 @@ footer {
     z-index: 1;
 }
 
-.head-datos-cliente{
+.head-datos-cliente {
     z-index: 1;
 }
 
@@ -687,7 +678,7 @@ footer {
     width: 55%;
 }
 
-#email > input{
+#email>input {
     width: 100%;
 }
 
@@ -803,31 +794,32 @@ textarea {
     height: 100px;
     resize: none;
 }
+
 /* Datos del pedido */
-.head-datosped{
+.head-datosped {
     margin: 30px 0;
     z-index: 1;
 }
 
 /* Seccion de los sabores */
-.bizch-rell{
+.bizch-rell {
     width: 70%;
     display: flex;
     justify-content: space-between;
 }
 
 /* Checkbox de sabores */
-#chocolate:checked{
+#chocolate:checked {
     background-color: #574029;
 }
 
 
-.head-sab-biz{
+.head-sab-biz {
     margin-bottom: 10px;
 }
 
 /* Sabores del pastel */
-.sabor-bizch{
+.sabor-bizch {
     display: flex;
     flex-direction: column;
     /* width: 100%; */
@@ -835,7 +827,7 @@ textarea {
 }
 
 /* Sabores del relleno */
-.sabor-relleno{
+.sabor-relleno {
     display: flex;
     flex-direction: column;
     /* width: 100%; */
@@ -843,14 +835,14 @@ textarea {
 }
 
 /* Cubierta y decoracion */
-.cub-decs{
+.cub-decs {
     width: 70%;
     display: flex;
     flex-direction: column;
 }
 
 /* Libras */
-#libras{
+#libras {
     text-align: center;
     margin-left: 3px;
     height: 30px;
@@ -859,7 +851,7 @@ textarea {
 
 /* input numeros */
 
-.inp-nums{
+.inp-nums {
     width: 100%;
     margin: 20px 0;
     display: flex;
@@ -867,8 +859,201 @@ textarea {
 }
 
 /* submit */
-#btn-enviar{
+#btn-enviar {
     margin-top: 50px;
     width: 130px;
+}
+
+
+/* -------------------------------------  */
+/* -------------------------------------  */
+
+/* - - - A D M I N I S T R A D O R  - - -  */
+
+/* -------------------------------------  */
+/* -------------------------------------  */
+
+.a-header {
+    background-color: #946dac;
+}
+
+/* Contenedor logo y slogan */
+.a-logo-link {
+    /* width: 100%; */
+    margin-left: 40px;
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Imagen y logo */
+.a-img-slogan {
+    display: flex;
+    align-items: center;
+}
+
+/* Imagen del logo */
+.a-img-lg {
+    width: 100px;
+    height: 100px;
+}
+
+/* Texto logo h4 */
+.a-text-lg>h4 {
+    font-family: Vladimir Script;
+    font-weight: lighter;
+    font-size: 40px;
+}
+
+/* Menu */
+.a-menu {
+    justify-self: end;
+    display: flex;
+    margin: 30px;
+}
+
+/* elementos del menu */
+.a-menu>* {
+    margin: 0 15px;
+    text-decoration: none;
+    display: flex;
+    transition: background-size .3s;
+    background-image: linear-gradient(currentColor, currentColor);
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    align-items: center;
+    color: white;
+    font-size: large;
+    font-weight: lighter;
+}
+
+.a-menu>*:hover,
+.a-menu>*:focus {
+    background-size: 100% 2px;
+}
+
+.a-menu>*:hover {
+    color: #f7e0f5;
+}
+
+/* salir */
+.a-menu :nth-child(3) {
+    padding: 8px 17px;
+    background-color: #424755;
+    border-radius: 10px;
+}
+
+.a-menu :nth-child(3):hover {
+    background-color: #525764;
+}
+
+/* main */
+.a-main {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Seccion de las tablas */
+.a-tabla {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* Titulo de sabores de pasteles */
+.a-title-tablas {
+    text-align: center;
+    margin: 30px 0;
+}
+
+/* Tabla */
+.tabla-sab-past {
+    table-layout: fixed;
+    width: 100%;
+    border-collapse: collapse;
+    border-top: 2px solid #962e6a;
+    border-bottom: 2px solid #962e6a;
+}
+
+/* Ancho de las columnas */
+
+.t1-sabor {
+    width: 40%;
+    padding-left: 5px;
+}
+
+.t1-exp {
+    width: 40%;
+}
+
+.t1-stock {
+    width: 9%;
+}
+
+/* Encabezados de las tablas */
+.tabla-adornos th,
+.tabla-sab-past th {
+    text-align: left;
+    border-bottom: 2px solid #962e6a;
+}
+
+.tabla-adornos tr>td:first-child,
+.tabla-sab-past tr>td:first-child {
+    padding-left: 5px;
+}
+
+/* Fondo de la tabla */
+.tabla-bg {
+    background-color: #f3f3f3af;
+    width: 50%;
+    display: flex;
+    padding: 25px;
+    justify-content: center;
+    border-radius: 20px;
+    box-shadow: 1px 7px 20px 0px rgb(0 0 0 / 30%);
+    margin-bottom: 30px;
+}
+
+.tabla-adornos {
+    table-layout: fixed;
+    width: 100%;
+    border-collapse: collapse;
+    border-top: 2px solid #962e6a;
+    border-bottom: 2px solid #962e6a;
+}
+
+/* ----------- */
+/* Pedidos */
+/* ----------- */
+
+/* Tamaño del fondo */
+.bg-ped {
+    width: 80%;
+}
+
+/* Tamaño de la tabla */
+.tabla-ped td{
+    padding: 3px;
+    /* border-bottom: 1px solid #962e6a; */
+}
+/* Columnas de la tabla pedidos */
+.tped-nombre{
+    width: 15%;
+}
+.tped-em{
+    width: 20%;
+}
+.tped-cantidad{
+    width: 7%;
+}
+.tped-lb{
+    width: 7%;
+}
+.tped-fecha{
+    width: 10%;
 }
 
