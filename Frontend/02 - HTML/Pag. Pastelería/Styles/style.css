@@ -936,6 +936,11 @@ textarea {
     background-size: 100% 2px;
 }
 
+/* Pestaña actual */
+.a-actual {
+    background-size: 100% 2px;
+}
+
 .a-menu>*:hover {
     color: #f7e0f5;
 }
