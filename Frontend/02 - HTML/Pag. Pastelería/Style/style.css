@@ -1,12 +1,12 @@
 /* Fuentes  Courgette y Rochester*/
 @font-face {
     font-family: Courgette;
-    src: url(./Fonts/Courgette-Regular.ttf);
+    src: url(Fonts/Courgette-Regular.ttf);
 }
 
 @font-face {
     font-family: Rochester;
-    src: url(./Fonts/Rochester-Regular.ttf);
+    src: url(Fonts/Rochester-Regular.ttf);
 }
 
 
