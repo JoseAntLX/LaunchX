@@ -1,7 +1,7 @@
 # MISION FRONTEND #
 
 ## 01 - INTRO
-- [Caso Abogabot]()
+- [Caso Abogabot](01 - Intro/)
 
 ## 02 - HTML
 - [Pag. Pastelería](https://pasteleriadulce.netlify.app/)
