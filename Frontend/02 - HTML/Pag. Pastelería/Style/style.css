@@ -1,4 +1,8 @@
 /* Fuentes  Courgette y Rochester*/
+
+
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
 @font-face {
     font-family: Courgette;
     src: url(../Fonts/Courgette-Regular.ttf);
@@ -53,7 +57,7 @@ header {
 
 /* Texto logo h4 */
 .text-lg>h4 {
-    font-family: Vladimir Script;
+    font-family: 'Great Vibes', cursive;
     font-weight: lighter;
     font-size: 40px;
 }
@@ -903,7 +907,7 @@ textarea {
 
 /* Texto logo h4 */
 .a-text-lg>h4 {
-    font-family: Vladimir Script;
+    font-family: 'Great Vibes', cursive;
     font-weight: lighter;
     font-size: 40px;
 }
