@@ -5,6 +5,7 @@
 
 ### 02 - HTML
 - [Pag. Pastelería](https://github.com/JoseAntLX/LaunchX/tree/master/Frontend/02%20-%20HTML/Pag.%20Pasteler%C3%ADa)
+- [Pag. hosteada](https://pasteleriadulce.netlify.app/)
 
 ### 03 - CSS
 - En proceso
