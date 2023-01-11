@@ -271,8 +271,8 @@
     border-radius: 10px;
     background-color: #f1f5ff;
     padding: 11px;
-    width: 51px;
-    height: auto;
+    width: 50px;
+    height: 50px;
     margin: 16px;
 }
 
@@ -394,6 +394,136 @@
 .tex-acc {
     color: #1f3e73;
     margin: 0 55px;
+}
+
+
+/* Emergency contact */
+
+.Emergency {
+    margin-right: 0;
+}
+
+.col-emergency-izq {
+    margin-top: 170px;
+    margin-left: 100px;
+}
+
+.p-emergency {
+    width: 85%;
+    font-size: 19px;
+    line-height: 1.5;
+}
+
+/* Cuadros */
+
+.cuadro-em-contacts {
+    width: 80%;
+    margin-top: 100px;
+    margin-left: 12px;
+}
+
+/* Quitar */
+/* --------------------------------------------------------- */
+
+.chat {
+    margin-left: 6%;
+}
+
+.cuadro-c {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    padding: 23px 25px;
+    border-radius: 10px;
+    border: solid 2px #6e6e6e0f;
+}
+
+.cuadro-c:hover {
+    box-shadow: 0px 21px 38px #3f4fc921;
+    border: solid 2px #fffffff7;
+}
+
+.enc-cuadro-c {
+    display: flex;
+    justify-content: space-between;
+    align-self: flex-start;
+}
+
+.cuadro-icon {
+    margin: 0;
+    margin-right: 25px;
+    margin-top: 10px;
+    width: 55px;
+    height: 55px;
+    padding: 13px;
+    border: 2px solid #f1f5ff;
+}
+
+.h3-enc-c {
+    color: #1f3d70;
+    font-size: 1.4rem;
+    margin-top: 13px;
+    margin-bottom: 5px;
+}
+
+.p-enc-c {
+    color: rgb(139 139 139);
+    font-size: 0.8rem;
+    font-weight: 500;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.cont-a-cuadro {
+    margin-top: 50px;
+    margin-bottom: 24px;
+}
+
+.a-cuadro-c {
+    font-size: 1.1rem;
+    background-color: #f1f5ff;
+    padding: 15px 54px;
+    text-align: center;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #1f3d70;
+    font-weight: 600;
+}
+
+.cuadro-c:hover {
+    transition: all .2s;
+}
+
+/* Hover */
+.cuadro-c:hover .card-icon {
+    border: 2px solid white;
+    transition: all .2s;
+    box-shadow: 0px 20px 23px #3f4fc91a;
+}
+
+.cuadro-c:hover .a-cuadro-c {
+    background-color: #2444c2;
+    color: white;
+    transition: all .2s;
+    font-weight: 500;
+    box-shadow: 0px 7px 15px #3f4fc973;
+}
+
+
+
+/* Imagen emergency */
+.img-emergency{
+    margin-top: 27%;
+    max-width: 98%;
+}
+
+.col-emergency-der {
+    padding: 0;
+}
+
+.row-2-contacts{
+    margin-top: 7%;
 }
 
 /* ----------------------------- */
