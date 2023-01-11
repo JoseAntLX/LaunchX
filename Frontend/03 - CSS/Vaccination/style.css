@@ -1,0 +1,401 @@
+/* Altura de la barra de nav */
+.navbar {
+    padding: 25px 0;
+    z-index: 2;
+    width: 100%;
+    background-color: #ffffffe6;
+    backdrop-filter: blur(2px);
+    position: absolute;
+    border: 2px solid white;
+}
+
+.cont-fluid-nav {
+    padding: 20px 10px;
+}
+
+/* navbar-nav espaciado*/
+.navbar-nav>* {
+    margin: 0 20px;
+}
+
+.navbar-nav {
+    margin-right: 16vh;
+    font-size: large;
+}
+
+/* Elementos del nav */
+.nav-link {
+    padding: 10px;
+}
+
+.nav-link:hover {
+    color: white;
+    background: #3b5bd9;
+    background-image: linear-gradient(to bottom right, #3b5bd9, #2444c2);
+    border-radius: 3px;
+    box-shadow: 0px 5px 10px #3f4fc96e;
+}
+
+/* Vaccination */
+.navbar-brand {
+    margin: 0 100px;
+    color: #2747c5;
+}
+
+.cont-fluid-nav {
+    padding: 20px;
+    overflow: hidden;
+}
+
+.cont-1-princ {
+    padding: 0;
+}
+
+.col-der-1 {
+    padding: 0;
+}
+
+.img-fluid {
+    position: relative;
+}
+
+/*  */
+.fila1 {
+    margin: 0;
+}
+
+/* 1era columna */
+.col-der1 {
+    padding: 115px;
+    padding-top: 228px;
+}
+
+/* Texto principal */
+.txt-princp {
+    color: #1f3e72;
+    font-weight: bold;
+    font-size: 3.9rem;
+}
+
+/* Parrafo debajo del texto princ */
+.txt-p-princ {
+    margin-top: 30px;
+    font-weight: 500;
+    font-size: 19px;
+    color: #6c7a93;
+    width: 400px;
+}
+
+/* Texto con iconos */
+.c-txt-ico {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: row;
+}
+
+/* Iconos */
+.ico-1col {
+    color: hsl(48deg 100% 54%);
+    margin-right: 18px;
+    border-bottom: solid 1px white;
+    padding: 5px;
+    border-radius: 4px;
+    height: 25px;
+    width: auto;
+    background-color: #ffd01433;
+    box-shadow: 0px 5px 10px #ffd01433;
+}
+
+/* Texto */
+.text-ico {
+    margin: 0;
+    font-size: 15px;
+    color: #1f3d70;
+    font-weight: 500;
+}
+
+.c-reloj {
+    margin-top: 155px;
+}
+
+/* Texto con reloj*/
+.r-txt-ico {
+    font-size: 20px;
+    margin: 0;
+    color: #1f3d70;
+    font-weight: 700;
+}
+
+/* iconos azules */
+.ico-blue {
+    border-radius: 3px;
+    padding: 7px;
+    margin-right: 18px;
+    border-bottom: solid 1px white;
+    height: 28px;
+    margin-top: 4px;
+    width: auto;
+    box-shadow: 0px 5px 5px #2b4bca21;
+    background-color: #e5edff;
+    color: #2b4bca;
+}
+
+
+/* Cuadro flotante */
+.cuadro-float {
+    z-index: 2;
+    background-color: #ffffffed;
+    backdrop-filter: blur(2px);
+    margin-left: 103px;
+    margin-top: -170px;
+    width: 902px;
+    height: 132px;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px #2b4bca21;
+
+}
+
+/* iconos del cuadro flotante */
+.ico-float {
+    margin-top: 2px;
+    padding-left: 0;
+    margin-right: 10px;
+    color: #2948c7;
+}
+
+/* Svg de iconos del cuadro flotante */
+.svg-float {
+    padding: 5px;
+    height: auto;
+    width: 24px;
+    background-color: hsl(217deg 91% 95%);
+    border-radius: 5px;
+}
+
+.text-1-float {
+    color: #6c7a93;
+    font-weight: 500;
+    font-size: 19px;
+
+}
+
+/* Texto del cuadro flotante 2 */
+.text-2-float {
+    margin-top: 10px;
+    margin-left: 18px;
+    color: #1f3d70;
+    font-weight: 700;
+    font-size: 22px;
+}
+
+/* Div del boton submit */
+.d-btn-s {
+    text-align: center;
+}
+
+/* Boton del cuadro flotante */
+.btn-cfloat {
+    padding: 15px 40px;
+    background-color: #2b4bca;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    box-shadow: 0px 5px 10px #3f4fc96e;
+}
+
+.btn-cfloat:hover {
+    background-color: #3b5bd9;
+    box-shadow: 0px 8px 10px #3f4fc96e;
+
+}
+
+/* Parte inferior de los tipos de vacunas */
+.inf-type-vac {
+    margin: 60px 100px;
+}
+
+/* Imagenes de los tipos de vacunas */
+.img-vacs-inf {
+    opacity: .2;
+}
+
+/* Imagen de tipo de vacuna */
+.img-tipo-vac {
+    width: 85%;
+}
+
+/* why should i vaccine */
+.why-cont {
+    margin: 0 100px;
+}
+
+.title-h2 {
+    color: #1f3d70;
+    font-weight: 700;
+    font-size: 40px;
+
+}
+
+.txt-p-1 {
+    font-weight: 500;
+    margin-top: 35px;
+    font-size: 18px;
+    color: #6c7a93;
+    width: 511px;
+}
+
+/* Tarjetas */
+.cards-cont {
+    margin: 50px 88px;
+    margin-bottom: 165px;
+}
+
+.card {
+    padding: 6px;
+    width: 16rem !important;
+    height: 18.313rem;
+    border-radius: 10px;
+    border: solid 2px #f9f9ff;
+}
+
+.card:hover {
+    box-shadow: 0px 20px 25px #3f4fc924;
+    border: solid 2px #ffffff;
+    transition: .2s;
+}
+
+/* iconos de tarjetas */
+.card-icon {
+    color: #2b4bca;
+    border-radius: 10px;
+    background-color: #f1f5ff;
+    padding: 11px;
+    width: 51px;
+    height: auto;
+    margin: 16px;
+}
+
+.card-title {
+    color: #1f3e73;
+    font-size: 23px;
+    margin-bottom: 17px;
+}
+
+.card-text {
+    font-weight: 500;
+    font-size: 15px;
+    color: #6c7a93;
+}
+
+/* ---------------- */
+/* Preparations */
+
+.cont-preparations {
+    margin: 0;
+}
+
+/* Columna de la imagen */
+.c-img-vacc2 {
+    padding: 0;
+}
+
+/* imagen */
+.img-vacc2 {
+    margin-top: 20px;
+    width: 90%;
+}
+
+/* Parrafo */
+.p-2 {
+    font-size: 20px;
+    width: 555px;
+}
+
+/* Acordeon */
+.accordion {
+    width: 70%;
+    margin-top: 34px;
+}
+
+/* Elementos del acordeon */
+.accordion-item {
+    margin-bottom: 24px;
+    border: none;
+    border: 2px solid #6c7a931a;
+    border-radius: 5px;
+
+}
+
+/*  */
+.accordion-button:not(.collapsed) {
+    background-color: white;
+    color: #1f3e73;
+    box-shadow: none;
+}
+
+.accordion-button {
+    color: #1f3e73;
+    font-weight: 500;
+}
+
+/* Icono del acordeon */
+.accordion-button::after {
+    display: none;
+    padding: 13px;
+}
+
+/* Div del icono del acordeon */
+.cont-ico-acc {
+    right: 8px;
+    position: absolute;
+}
+
+.up-ico-accordion {
+    width: 20px;
+    display: flex;
+    justify-self: end;
+    transition-property: left;
+    transition: .5s;
+}
+
+.accordion-button.collapsed>div>.up-ico-accordion {
+    transform: rotate(180deg);
+}
+
+.accordion-button .collapsed>div>svg {
+    box-shadow: none;
+}
+
+.accordion-button:not(.collapsed)>div>.ico1 {
+    box-shadow: 0px 4px 6px #3f4fc93b;
+    border: solid .5px #f2f2f3fa;
+    transition: all .3s;
+}
+
+.accordion-button:not(.collapsed)>div>.up-ico-accordion {
+    box-shadow: 0px 2px 4px #3f4fc946;
+    border: solid .5px #f2f2f3fa;
+    transition: all .3s;
+}
+
+.accordion-item:not(:first-of-type) {
+    border: 2px solid #6c7a931a;
+}
+
+/* Letras del acordeon */
+.accordion-body {
+    font-weight: 400;
+    padding: 5px 0px;
+    font-size: 14px;
+    padding-bottom: 25px;
+}
+
+.tex-acc {
+    color: #1f3e73;
+    margin: 0 55px;
+}
+
+/* ----------------------------- */
+/* TODO: Cambiar la rotacion de los iconos por transform a el otro  */
+/* ----------------------------- */
