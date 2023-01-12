@@ -49,6 +49,7 @@
 
 .cont-1-princ {
     padding: 0;
+    margin-bottom: 150px;
 }
 
 .col-der-1 {
@@ -265,7 +266,7 @@
     transition: .2s;
 }
 
-.card:hover .card-icon{
+.card:hover .card-icon {
     border: 2px solid white;
     transition: all .2s;
     box-shadow: 0px 20px 23px #3f4fc91a;
@@ -432,7 +433,8 @@
 /* Quitar */
 /* --------------------------------------------------------- */
 
-.chat, .message{
+.chat,
+.message {
     margin-left: 6%;
 }
 
@@ -498,11 +500,11 @@
     font-weight: 600;
 }
 
-.a-cuadro-c-video{
+.a-cuadro-c-video {
     padding: 15px 29px;
 }
 
-.a-cuadro-c-message{
+.a-cuadro-c-message {
     padding: 15px 34px;
 }
 
@@ -528,19 +530,90 @@
 
 
 /* Imagen emergency */
-.img-emergency{
+.img-emergency {
     margin-top: 27%;
-    max-width: 98%;
+    padding-left: 2%;
 }
 
 .col-emergency-der {
     padding: 0;
 }
 
-.row-2-contacts{
+.row-2-contacts {
     margin-top: 7%;
+}
+
+/* ------------- */
+/* ---Footer---- */
+/* ------------- */
+
+.cont-footer {
+    position: relative;
+    background-color: #eef3ff;
+    padding-top: 50px;
+    padding-left: 120px;
+    padding-right: 20px;
+}
+
+.foot-fila1{
+    margin-bottom: 100px;
+}
+
+.foot-vacc-h2 {
+    color: #2848c6;
+    font-weight: 700;
+    font-size: 1.8rem;
+}
+
+.p-foot {
+    margin-top: 15px;
+    width: 30%;
+    font-weight: 600;
+    color: #6d7b93;
+}
+
+.a-foot{
+    text-decoration: none;
+    width: 100%;
+}
+
+.div-about{
+    display: block;
+}
+
+.a-foot{
+    margin-top: 20px;
+    width: 100%;
+    display: block;
+}
+
+.foot-fila1 h5{
+    color: #1f3e72;
+    font-weight: 700;
+    font-size: 1.4rem;
+    margin-bottom: 5px;
+}
+
+.foot-fila2{
+    padding-left: 0px;
+    padding-bottom: 15px;
+}
+
+.p-foot2{
+    z-index: 1;
+    font-weight: 600;
+    color: #6d7b93; 
+}
+
+.img-foot-fondo{
+    z-index: 0;
+    position: absolute;
+    bottom: 0;
+    right: 6%;
+    opacity: .1;
 }
 
 /* ----------------------------- */
 /* TODO: Cambiar la rotacion de los iconos por transform a el otro  */
+/* Poner la imagen de fondo con los triangulitos */
 /* ----------------------------- */
