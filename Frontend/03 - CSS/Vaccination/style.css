@@ -1,3 +1,10 @@
+
+/* Variables */
+:root{
+    --arrow-up: url("./SVG/caret-up-fill.svg");
+    --arrow-down: url("./SVG/caret-down-fill.svg");
+}
+
 /* Altura de la barra de nav */
 .navbar {
     padding: 25px 0;
@@ -74,7 +81,7 @@
     position: absolute;
     z-index: 0;
     opacity: .1;
-    top: 8%;
+    top: 7%;
     margin-left: 55px;
     width: 10%;
 }
@@ -641,7 +648,3 @@
     right: 6%;
     opacity: .1;
 }
-
-/* ----------------------------- */
-/* TODO: Cambiar la rotacion de los iconos por transform a el otro  */
-/* ----------------------------- */
