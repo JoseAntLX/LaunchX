@@ -62,7 +62,30 @@
 
 /*  */
 .fila1 {
+    position: relative;
     margin: 0;
+}
+
+/* Triangulo de fondo */
+.img-fondo-fila1{
+    rotate: 180deg;
+    position: absolute;
+    top: 200px;
+    position: absolute;
+    z-index: 0;
+    opacity: .1;
+    top: 8%;
+    margin-left: 55px;
+    width: 10%;
+}
+
+/* Segundo triangulo */
+.img2-fila1{
+    rotate: -90deg;
+    top: 26%;
+    right: 45%;
+    z-index: 0;
+    width: 18%;
 }
 
 /* 1era columna */
@@ -226,7 +249,13 @@
     width: 85%;
 }
 
+.img-enfermera{
+    z-index: 1;
+}
+
+/* ---------------------- */
 /* why should i vaccine */
+/* ---------------------- */
 .why-cont {
     margin: 0 100px;
 }
@@ -615,5 +644,4 @@
 
 /* ----------------------------- */
 /* TODO: Cambiar la rotacion de los iconos por transform a el otro  */
-/* Poner la imagen de fondo con los triangulitos */
 /* ----------------------------- */
