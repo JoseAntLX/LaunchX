@@ -2,7 +2,7 @@
 
 [Enlace de la pagina hosteada](https://vaccination-joseantlx.netlify.app/)
 
-Para esta práctica necesito que clonen la página que está en el siguiente enlace [Link del diseño](./landingVacunaci%C3%B3n.png) by [Adhiari Subekti](https://dribbble.com/Adhiari_is)
+Para esta práctica se teine que clonar la página que está en el siguiente enlace [Link del diseño](./landingVacunaci%C3%B3n.png) by [Adhiari Subekti](https://dribbble.com/Adhiari_is)
 
 Es una página de vacunación y en estos momentos que se está poniendo la tercer dosis en varios estados de la república y que en algunos otros se está poniendo la segunda o incluso la primera sigue siendo muy importante recordar toda esta información.
 
