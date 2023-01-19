@@ -25,9 +25,13 @@ const fetchPokemon = async () => {
         let pokeImg = data.sprites.front_default;
         let pokeInfo = data.abilities;
         let pokeType = data.types;
+        let pokeStadists = data.stats;
+        let pokeMov = data.moves;
         pokeImage(pokeImg);
         pokeData(pokeInfo);
         dataTypes(pokeType);
+        pokeStats(pokeStadists);
+        pokeMoves(pokeMov);
     }
 }
 
@@ -54,11 +58,18 @@ const dataTypes = (types) => {
 }
 
 // Estadísticas
-// const pokeStadistics = (stadistics) => {
-//     const pokeType = document.getElementById('pokeType');
-//     const typesName = stadistics.map((item) => item.type.name);
-//     pokeType.innerHTML = typesName;
-// }
+const pokeStats = (stadistics) => {
+    const pokeStat = document.getElementById('estadisticas');
+    const statsName = stadistics.map((item) => item.stat.name + ": " + item.base_stat);
+    pokeStat.innerHTML = statsName;
+}
+
+// Movimientos
+const pokeMoves = (moves) => {
+    const pokeMove = document.getElementById('pokeMovs');
+    const movesName = moves.map((item) => item.move.name );
+    pokeMove.innerHTML = movesName;
+}
 
 
 // Borrar los datos cuando se recargue
@@ -79,6 +90,10 @@ function limpiaDatos() {
     // Tipo
     const pokeType = document.getElementById('pokeType');
     pokeType.innerHTML = ""
+    
+    // Estadisticas
+    const pokeStats = document.getElementById('estadisticas');
+    pokeStats.innerHTML = ""
 }
 
 
