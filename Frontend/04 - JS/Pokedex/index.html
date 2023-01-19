@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Pokedex</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+
+    </header>
+
+
+    <main>
+        <h1>Consultando la API de Pokemon</h1>
+        <div class="cont-pokedesk">
+
+            <div class="pokedesk">
+                <div class="poke-right">
+                    <div class="botons-sup-r">
+
+                    </div>
+                    <div class="poke-central">
+                        <div class="c-poke-img">
+                            <img id="img-poke" src="./Img/pokeball.png" alt="Imagen de Pokemon">
+                            <p id="nombrep"></p>
+                        </div>
+                        <input type="text" id="pokeInput" autocomplete="off" oninput="validarInput()">
+                    </div>
+                    <div class="botons-inf-r">
+                        <button disabled id="btn-buscar" onclick="fetchPokemon()">Buscar</button>
+                    </div>
+                </div>
+                <div class="poke-left">
+                    <div class="poke-info1-l">
+                        <div id="pokeType"></div>
+                        <div id="abilities"></div>
+                        <div id="estadisticas"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <script src='consultaApi.js'></script>
+</body>
+
+</html>

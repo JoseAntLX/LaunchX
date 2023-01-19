@@ -1,0 +1,68 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* Contenedor del pokedesk */
+.cont-pokedesk{
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*  */
+.pokedesk{
+    padding: 20px;
+    display: flex;
+    width: 55%;
+    height: 500px;
+    background-image: url('./Img/pokedex-fondo.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+/* Parte derecha del pokedesk */
+.poke-right{
+    width: 46%;
+    padding: 20px;
+}
+
+/* Pantalla principal */
+.poke-central{
+    margin-top: 26%;
+    background-color: lightgray;
+    width: 64%;
+    box-shadow: -5px 5px 0px #6c6c6c;
+    height: 40%;
+    padding: 10%;
+    padding-bottom: 15%;
+    border-radius: 10px;
+}
+
+/* COntenedor de la imagen */
+.c-poke-img{
+    height: 100%;
+    background-color: rgb(170, 170, 170);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* Imagen  */
+#img-poke{
+    height: 100%;
+    /* object-fit: contain; */
+}
+
+/* Parte izquierda del pokedesk */
+.poke-left{
+    padding: 5%;
+    padding-top: 14%;
+}
+
+/* Info sup izquierda */
+.poke-info1-l{
+    margin-top: 30%;
+}
