@@ -22,7 +22,7 @@ const fetchPokemon = async () => {
     if (data) {
         console.log(data);
         nombre.innerHTML = data.name;
-        let pokeImg = data.sprites.front_default;
+        let pokeImg = data.sprites.other.dream_world.front_default;
         let pokeInfo = data.abilities;
         let pokeType = data.types;
         let pokeStadists = data.stats;
@@ -42,8 +42,10 @@ const pokeImage = (url) => {
     // Condicional, si el pokemon no tiene foto
     url === null ? pokePhoto.src = "./Img/pokeball.png" : pokePhoto.src = url;
 
-    pokePhoto.style.height = "100%";
+    pokePhoto.style.height = "70%";
     pokePhoto.style.objectFit = "cover";
+    pokePhoto.style.top = "10%";
+    pokePhoto.style.position = "absolute";
 }
 
 // Habilidades del pokemon
