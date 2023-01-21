@@ -1,3 +1,9 @@
+/* Fuente estilo consola */
+
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+
+
 * {
     margin: 0;
     padding: 0;
@@ -14,6 +20,7 @@
 /*  */
 .pokedesk {
     padding: 20px;
+    padding-top: 10px;
     display: flex;
     width: 55%;
     height: 500px;
@@ -28,7 +35,64 @@
 }
 
 /* Leds de la parte superior */
+.botons-sup-r {
+    display: flex;
+}
 
+.led-white {
+    margin-left: 10px;
+    border-radius: 40px;
+    width: 75px;
+    height: 75px;
+    background-color: white;
+    position: relative;
+}
+
+.led-blue {
+    top: 7px;
+    left: 10px;
+    position: absolute;
+    border-radius: 40px;
+    width: 58px;
+    height: 59px;
+    background-color: #0bcdff;
+    box-shadow: -3px -7px 0px 7px inset #009dd4;
+}
+
+.brillo-led {
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    opacity: .6;
+    border-radius: 30px;
+    background-color: white;
+    top: 6px;
+    left: 15px;
+}
+
+/* Leds pequeños */
+.leds-smalls {
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: 3px;
+    margin-top: 5px;
+}
+
+.leds-smalls>div {
+    width: 18px;
+    height: 18px;
+    border-radius: 30px;
+    margin-right: 10px;
+    box-shadow: -1px -2px 0px 3px inset #38383878;
+}
+
+.led-red {
+    background-color: #e90809;
+}
+
+.led-yellow {
+    background-color: yellow;
+}
 
 /* Pantalla principal */
 .poke-central {
@@ -36,6 +100,7 @@
     margin-top: 29%;
     background-color: lightgray;
     width: 66%;
+    margin-top: 10%;
     box-shadow: -5px 5px 0px #6c6c6c;
     height: 36%;
     padding: 10%;
@@ -52,6 +117,7 @@
     align-items: center;
     flex-direction: column;
     position: relative;
+    overflow: hidden;
     border-radius: 5px;
     box-shadow: -1px 1px 0px 1px inset #858585;
 }
@@ -62,12 +128,15 @@
 }
 
 /* NOmbre del pokemon */
-#nombrep{
+#nombrep {
     position: absolute;
     bottom: 10px;
+    text-transform: capitalize;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 90%;
 }
 
-#pokeInput{
+#pokeInput {
     margin-top: 17px;
     height: 25px;
     position: relative;
@@ -76,7 +145,7 @@
     border-radius: 3px;
 }
 
-#pokeInput:focus-visible{
+#pokeInput:focus-visible {
     outline: 0;
 }
 
@@ -91,7 +160,7 @@
 }
 
 /* Boton en forma de cruz */
-.cruz{
+.cruz {
     background-color: #222222;
     height: 76px;
     position: relative;
@@ -102,7 +171,7 @@
     margin-left: 30px;
 }
 
-.cruz::after{
+.cruz::after {
     background-color: #222222;
     content: "";
     height: 20px;
@@ -114,28 +183,28 @@
     width: 76px;
 }
 
-.sombra-cruz{
+.sombra-cruz {
     position: absolute;
     box-shadow: none;
     left: 0px;
 }
 
-.sombra-cruz:hover{
+.sombra-cruz:hover {
     background-color: #353535;
 }
 
-.sombra-cruz::after{
+.sombra-cruz::after {
     box-shadow: none;
     position: absolute;
 }
 
-.sombra-cruz:hover::after{
+.sombra-cruz:hover::after {
     background-color: #353535;
 
 }
 
 /* Cuadros de colores */
-.rects-inf{
+.rects-inf {
     display: flex;
     margin-top: -25px;
     width: 42%;
@@ -143,13 +212,14 @@
     align-items: center;
 }
 
-.rect-1{
+.rect-1 {
     width: 55px;
     height: 12px;
     border-radius: 22px;
     background-color: #3688f9;
 }
-.rect-2{
+
+.rect-2 {
     width: 55px;
     height: 12px;
     border-radius: 22px;
@@ -173,7 +243,7 @@
     background-color: #353535 !important;
 }
 
-.pantalla-verde{
+.pantalla-verde {
     width: 105px;
     height: 42px;
     position: absolute;
@@ -189,8 +259,6 @@
     width: 54%;
     padding-top: 14%;
 }
-
-
 
 
 /* Textaarea de los movimientos */
