@@ -20,8 +20,8 @@
         <div class="cont-pokedesk">
 
             <div class="pokedesk">
-                <div class="poke-right">
-                    <div class="botons-sup-r">
+                <div class="poke-left">
+                    <div class="botons-sup-l">
                         <div class="led-white">
                             <div class="led-blue">
                                 <div class="brillo-led"></div>
@@ -40,9 +40,11 @@
                         </div>
                         <input type="text" onkeypress="llamaBoton()" placeholder="Nombre del pokemon" id="pokeInput" autocomplete="off" oninput="validarInput()">
                     </div>
-                    <div class="botons-inf-r">
+                    <div class="botons-inf-l">
                         <div class="cruz"></div>
-                        <div class=" cruz sombra-cruz"></div>
+                        <div class=" cruz sombra-cruz">
+                            <div class="circulo-cruz"></div>
+                        </div>
                         <div class="rects-inf">
                             <div class="rect-1"></div>
                             <div class="rect-2"></div>
@@ -51,9 +53,11 @@
                         <div class="pantalla-verde"></div>
                     </div>
                 </div>
-                <div class="poke-left">
-                    <div class="poke-info1-l">
-                        <div id="pokeType"></div>
+                <div class="poke-right">
+                    <div class="poke-info1-r">
+                        <div id="pokeType">
+                            <h4 class="tipo-enc">Tipo: </h4>
+                        </div>
                         <div id="abilities"></div>
                         <div id="estadisticas"></div>
                         <textarea readonly id="pokeMovs" cols="30" rows="10"></textarea>
