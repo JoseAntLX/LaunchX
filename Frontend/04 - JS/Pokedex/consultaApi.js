@@ -38,7 +38,10 @@ const fetchPokemon = async () => {
 // Imagen
 const pokeImage = (url) => {
     const pokePhoto = document.getElementById("img-poke");
-    pokePhoto.src = url;
+
+    // Condicional, si el pokemon no tiene foto
+    url === null ? pokePhoto.src = "./Img/pokeball.png" : pokePhoto.src = url;
+
     pokePhoto.style.height = "100%";
     pokePhoto.style.objectFit = "cover";
 }
@@ -67,7 +70,7 @@ const pokeStats = (stadistics) => {
 // Movimientos
 const pokeMoves = (moves) => {
     const pokeMove = document.getElementById('pokeMovs');
-    const movesName = moves.map((item) => item.move.name );
+    const movesName = moves.map((item) => item.move.name);
     pokeMove.innerHTML = movesName;
 }
 
@@ -89,15 +92,39 @@ function limpiaDatos() {
 
     // Tipo
     const pokeType = document.getElementById('pokeType');
-    pokeType.innerHTML = ""
-    
+    pokeType.innerHTML = "";
+
     // Estadisticas
     const pokeStats = document.getElementById('estadisticas');
-    pokeStats.innerHTML = ""
+    pokeStats.innerHTML = "";
+
+    // Movimientos
+    const pokeMovs = document.getElementById('pokeMovs');
+    pokeMovs.innerHTML = "";
+    pokeMovs.style.backgroundColor
 }
 
+// Cambiar el color cuando se de click
+function clicB(obj) {
+    obj.style.color = "#3688f9";
+    obj.style.backgroundColor = "#3688f9";
+
+    setTimeout(() => {
+        obj.style.color = "white";
+        obj.style.backgroundColor = "#222222";
+    }, 50);
+}
 
 // Deshabilitar el boton si no se ha ingresado nada
 function validarInput() {
     document.getElementById('btn-buscar').disabled = !document.getElementById('pokeInput').value.length;
+}
+
+// cuando se pulse enter en el input de click al boton
+function llamaBoton() {
+    document.addEventListener("keydown", function(event) {
+        if (event.key === "Enter") {
+          document.getElementById("btn-buscar").click();
+        }
+      });
 }

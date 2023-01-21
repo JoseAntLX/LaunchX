@@ -1,11 +1,10 @@
-
-*{
+* {
     margin: 0;
     padding: 0;
 }
 
 /* Contenedor del pokedesk */
-.cont-pokedesk{
+.cont-pokedesk {
     margin-top: 40px;
     display: flex;
     align-items: center;
@@ -13,7 +12,7 @@
 }
 
 /*  */
-.pokedesk{
+.pokedesk {
     padding: 20px;
     display: flex;
     width: 55%;
@@ -24,45 +23,177 @@
 }
 
 /* Parte derecha del pokedesk */
-.poke-right{
+.poke-right {
     width: 46%;
-    padding: 20px;
 }
 
+/* Leds de la parte superior */
+
+
 /* Pantalla principal */
-.poke-central{
-    margin-top: 26%;
+.poke-central {
+    margin: 5%;
+    margin-top: 29%;
     background-color: lightgray;
-    width: 64%;
+    width: 66%;
     box-shadow: -5px 5px 0px #6c6c6c;
-    height: 40%;
+    height: 36%;
     padding: 10%;
     padding-bottom: 15%;
     border-radius: 10px;
 }
 
 /* Contenedor de la imagen */
-.c-poke-img{
-    height: 100%;
-    background-color: rgb(170, 170, 170);
+.c-poke-img {
+    height: 95%;
     display: flex;
+    background-image: url('./Img/paisaje.jpg');
+    background-size: cover;
     align-items: center;
     flex-direction: column;
+    position: relative;
+    border-radius: 5px;
+    box-shadow: -1px 1px 0px 1px inset #858585;
 }
 
 /* Imagen  */
-#img-poke{
+#img-poke {
     height: 100%;
-    /* object-fit: contain; */
 }
 
+/* NOmbre del pokemon */
+#nombrep{
+    position: absolute;
+    bottom: 10px;
+}
+
+#pokeInput{
+    margin-top: 17px;
+    height: 25px;
+    position: relative;
+    left: 59px;
+    border: 0;
+    border-radius: 3px;
+}
+
+#pokeInput:focus-visible{
+    outline: 0;
+}
+
+/* Botones inferiores de la derecha */
+.botons-inf-r {
+    margin: 5%;
+    margin-top: 6%;
+    margin-right: 9%;
+    position: relative;
+    display: flex;
+    justify-content: end;
+}
+
+/* Boton en forma de cruz */
+.cruz{
+    background-color: #222222;
+    height: 76px;
+    position: relative;
+    width: 20px;
+    border-radius: 5px;
+    box-shadow: -3px 3px 0px 1px black;
+    margin: auto;
+    margin-left: 30px;
+}
+
+.cruz::after{
+    background-color: #222222;
+    content: "";
+    height: 20px;
+    left: -28px;
+    border-radius: 5px;
+    position: absolute;
+    top: 28px;
+    box-shadow: -3px 3px 0px 1px black;
+    width: 76px;
+}
+
+.sombra-cruz{
+    position: absolute;
+    box-shadow: none;
+    left: 0px;
+}
+
+.sombra-cruz:hover{
+    background-color: #353535;
+}
+
+.sombra-cruz::after{
+    box-shadow: none;
+    position: absolute;
+}
+
+.sombra-cruz:hover::after{
+    background-color: #353535;
+
+}
+
+/* Cuadros de colores */
+.rects-inf{
+    display: flex;
+    margin-top: -25px;
+    width: 42%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.rect-1{
+    width: 55px;
+    height: 12px;
+    border-radius: 22px;
+    background-color: #3688f9;
+}
+.rect-2{
+    width: 55px;
+    height: 12px;
+    border-radius: 22px;
+    background-color: #ff0000;
+}
+
+/* Boton de busqueda */
+#btn-buscar {
+    color: white;
+    background-color: #222222;
+    border: 0;
+    margin-left: 15px;
+    border-radius: 25px;
+    padding: 18px 5px;
+    height: 51px;
+    width: 51px;
+    box-shadow: -3px 4px 0px 4px black;
+}
+
+#btn-buscar:hover {
+    background-color: #353535 !important;
+}
+
+.pantalla-verde{
+    width: 105px;
+    height: 42px;
+    position: absolute;
+    background-color: #55ab62;
+    top: 50px;
+    left: 111px;
+    border-radius: 6px;
+}
+
+
 /* Parte izquierda del pokedesk */
-.poke-left{
-    padding: 5%;
+.poke-left {
+    width: 54%;
     padding-top: 14%;
 }
 
-/* Info sup izquierda */
-.poke-info1-l{
-    /* margin-top: 30%; */
+
+
+
+/* Textaarea de los movimientos */
+#pokeMovs {
+    resize: none;
 }

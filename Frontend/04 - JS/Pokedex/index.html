@@ -22,17 +22,33 @@
             <div class="pokedesk">
                 <div class="poke-right">
                     <div class="botons-sup-r">
-
+                        <div class="led-white">
+                            <div class="led-blue">
+                                <div class="brillo-led"></div>
+                            </div>
+                        </div>
+                        <div class="leds-smalls">
+                            <div class="led-red"></div>
+                            <div class="led-yellow"></div>
+                            <div class="led-yellow"></div>
+                        </div>
                     </div>
                     <div class="poke-central">
                         <div class="c-poke-img">
                             <img id="img-poke" src="./Img/pokeball.png" alt="Imagen de Pokemon">
                             <p id="nombrep"></p>
                         </div>
-                        <input type="text" id="pokeInput" autocomplete="off" oninput="validarInput()">
+                        <input type="text" onkeypress="llamaBoton()" placeholder="Nombre del pokemon" id="pokeInput" autocomplete="off" oninput="validarInput()">
                     </div>
                     <div class="botons-inf-r">
-                        <button disabled id="btn-buscar" onclick="fetchPokemon()">Buscar</button>
+                        <div class="cruz"></div>
+                        <div class=" cruz sombra-cruz"></div>
+                        <div class="rects-inf">
+                            <div class="rect-1"></div>
+                            <div class="rect-2"></div>
+                        </div>
+                        <button disabled id="btn-buscar" onclick="fetchPokemon(), clicB(this)">Buscar</button>
+                        <div class="pantalla-verde"></div>
                     </div>
                 </div>
                 <div class="poke-left">
