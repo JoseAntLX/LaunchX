@@ -7,10 +7,10 @@ const fetchPokemon = async () => {
     let pokeName = pokeInput.value;
 
     const url = `https://pokeapi.co/api/v2/pokemon/${pokeName}`;
+    limpiaDatos();
 
     let data = await fetch(url).then((res) => {
         if (res.status != "200") {
-            limpiaDatos();
             pokeImage("./Img/pokemon-sad.gif");
             nombre.innerHTML = "No encontrado";
         }
@@ -66,17 +66,22 @@ const dataTypes = (types) => {
 const pokeStats = (stadistics) => {
 
     //Lista de los elementos de las caracteristicas 
-    const pokeStat = document.querySelector('#hp, #attack, #defense, #special-attack, #special-defense, #speed');
+    const pokeStat = document.querySelectorAll('#hp, #attack, #defense, #special-attack, #special-defense, #speed');
 
+    // Obtencion de cada una de las caracteristicas desde la api
     const statsName = stadistics.map((item) => item.base_stat);
-    console.log(statsName);
-    pokeStat.innerHTML = statsName;
 
-    // Creando el span
-    const spanp = document.createElement("span");
-    spanp.textContent = statsName[0];
-    pokeStat[1].appendChild(spanp);
-    console.log(spanp)  // Me quedé aqui
+    // Pasa esos elementos al dom agregandolos individualmente
+    pokeStat.forEach((stat, i) => {
+
+        // Creando el elemento span
+        const spanp = document.createElement("span");
+        spanp.classList.add("cspan");
+
+        spanp.textContent = statsName[i];
+        stat.appendChild(spanp);
+    });
+
 }
 
 
@@ -108,13 +113,17 @@ function limpiaDatos() {
     pokeType.innerHTML = "";
 
     // Estadisticas
-    const pokeStats = document.getElementById('estadisticas');
-    pokeStats.innerHTML = "";
+
+    const spans = document.querySelectorAll(".cspan");
+    for (let i = 0; i < spans.length; i++) {
+        spans[i].remove();
+    }
 
     // Movimientos
     const pokeMovs = document.getElementById('pokeMovs');
     pokeMovs.innerHTML = "";
-    pokeMovs.style.backgroundColor
+
+
 }
 
 // Cambiar el color cuando se de click
