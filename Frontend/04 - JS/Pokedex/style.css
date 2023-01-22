@@ -275,11 +275,11 @@
 
 /* CUadro de info */
 .poke-info1-r{
-    padding: 10px;
+    padding: 10px 15px;
     margin-left: 14%;
     display: flex;
     flex-direction: column;
-    width: 61%;
+    width: 59%;
     height: 35%;
     border-radius: 10px;
     background-color: #032d29;
@@ -293,6 +293,64 @@
     display: flex;
 }
 
+/* Encabezado de tipo */
+.info1-enc{
+    font-family: system-ui;
+    color: rgb(255, 196, 0);
+    font-weight: 500;
+    align-self: end;
+    margin-right: 5px;
+    font-size: .7em;
+}
+
+/* Spans tipo poke */
+#cont-type>span, #cont-abilities>span{
+    color: white;
+    background-color: #006eff ;
+    border-radius: 5px;
+    align-items: center;
+    padding: 2px 5px;
+    margin-right: 5px;
+    font-size: .6em;
+    text-transform: uppercase;
+    font-family: system-ui;
+}
+
+#cont-abilities{
+    margin-top: 10px;
+}
+
+#cont-abilities>span{
+    background-color: #147c24;
+}
+
+/* Estadisticas */
+
+#estadisticas{
+    margin-top: 12%;
+    width: 100%;
+}
+
+#estadisticas>*{
+    width: 16.6%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* Barra de estadisticas */
+.barra-ests{
+    width: 50%;
+    height: 40px;
+    background-color: white;
+}
+
+.enc-stat{
+    font-size: x-small;
+    color: #ffc107;
+    font-weight: 500;
+    text-align: center;
+}
 
 /* Textaarea de los movimientos */
 #pokeMovs {

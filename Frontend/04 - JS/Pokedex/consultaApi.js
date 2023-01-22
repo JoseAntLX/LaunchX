@@ -67,9 +67,17 @@ const dataTypes = (types) => {
 
 // Habilidades del pokemon
 const pokeData = (abilities) => {
-    const pokeAbilities = document.getElementById("abilities");
+
     const abilitiesName = abilities.map((item) => item.ability.name);
-    pokeAbilities.innerHTML = abilitiesName;
+    abilitiesName.forEach((ability) => {
+        const span = document.createElement("span");
+        span.classList.add("cspan", "bar-span");
+
+        span.textContent = ability;
+        const csability = document.getElementById("cont-abilities");
+        csability.appendChild(span);
+    })
+    
 }
 
 // Estadísticas
@@ -111,16 +119,16 @@ function limpiaDatos() {
     nombre.innerHTML = "";
 
     // Habilidades
-    const pokeAbilities = document.getElementById("abilities");
-    pokeAbilities.innerHTML = "";
+    // const pokeAbilities = document.getElementById("abilities");
+    // pokeAbilities.innerHTML = "";
 
     // Imagen
     const pokePhoto = document.getElementById("img-poke");
     pokePhoto.src = "";
 
     // Tipo
-    const pokeType = document.getElementById('pokeType');
-    pokeType.innerHTML = "";
+    // const pokeType = document.getElementById('pokeType');
+    // pokeType.innerHTML = "";
 
     // Estadisticas
 
