@@ -50,9 +50,19 @@ const pokeImage = (url) => {
 
 // Tipo
 const dataTypes = (types) => {
-    const pokeType = document.getElementById('pokeType');
+
     const typesName = types.map((item) => item.type.name);
-    pokeType.innerHTML = typesName;
+    
+    //  agregar un span por cada elemento de typesName
+    typesName.forEach((type) => {
+
+        const span = document.createElement("span"); // en cada iteracion crea un span span con la clase
+        span.classList.add("cspan");
+
+        span.textContent = type;   // se asigna el valor al span
+        const cstype = document.getElementById("cont-type");    // se obtiene la clase para agregarle el span
+        cstype.appendChild(span);
+    })
 }
 
 // Habilidades del pokemon
@@ -68,7 +78,7 @@ const pokeStats = (stadistics) => {
     //Lista de los elementos de las caracteristicas 
     const pokeStat = document.querySelectorAll('#hp, #attack, #defense, #special-attack, #special-defense, #speed');
 
-    // Obtencion de cada una de las caracteristicas desde la api
+    // Obtencion de cada una de las caracteristicas desde fetchPokemon
     const statsName = stadistics.map((item) => item.base_stat);
 
     // Pasa esos elementos al dom agregandolos individualmente
