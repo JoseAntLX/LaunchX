@@ -64,10 +64,21 @@ const dataTypes = (types) => {
 
 // Estadísticas
 const pokeStats = (stadistics) => {
-    const pokeStat = document.getElementById('estadisticas');
-    const statsName = stadistics.map((item) => item.stat.name + ": " + item.base_stat);
+
+    //Lista de los elementos de las caracteristicas 
+    const pokeStat = document.querySelector('#hp, #attack, #defense, #special-attack, #special-defense, #speed');
+
+    const statsName = stadistics.map((item) => item.base_stat);
+    console.log(statsName);
     pokeStat.innerHTML = statsName;
+
+    // Creando el span
+    const spanp = document.createElement("span");
+    spanp.textContent = statsName[0];
+    pokeStat[1].appendChild(spanp);
+    console.log(spanp)  // Me quedé aqui
 }
+
 
 // Movimientos
 const pokeMoves = (moves) => {
@@ -124,9 +135,9 @@ function validarInput() {
 
 // cuando se pulse enter en el input de click al boton
 function llamaBoton() {
-    document.addEventListener("keydown", function(event) {
+    document.addEventListener("keydown", function (event) {
         if (event.key === "Enter") {
-          document.getElementById("btn-buscar").click();
+            document.getElementById("btn-buscar").click();
         }
-      });
+    });
 }
