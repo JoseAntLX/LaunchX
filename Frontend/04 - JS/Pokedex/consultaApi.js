@@ -48,18 +48,18 @@ const pokeImage = (url) => {
     pokePhoto.style.position = "absolute";
 }
 
-// Habilidades del pokemon
-const pokeData = (abilities) => {
-    const pokeAbilities = document.getElementById("abilities");
-    const abilitiesName = abilities.map((item) => item.ability.name);
-    pokeAbilities.innerHTML = abilitiesName;
-}
-
 // Tipo
 const dataTypes = (types) => {
     const pokeType = document.getElementById('pokeType');
     const typesName = types.map((item) => item.type.name);
     pokeType.innerHTML = typesName;
+}
+
+// Habilidades del pokemon
+const pokeData = (abilities) => {
+    const pokeAbilities = document.getElementById("abilities");
+    const abilitiesName = abilities.map((item) => item.ability.name);
+    pokeAbilities.innerHTML = abilitiesName;
 }
 
 // Estadísticas
@@ -148,5 +148,5 @@ function llamaBoton() {
         if (event.key === "Enter") {
             document.getElementById("btn-buscar").click();
         }
-    });
+    }, {once: true});   // el envento se ejecuta una sola vez
 }
