@@ -1,5 +1,27 @@
 
 
+// Agrega los divs de la barra de 
+function creaBarras() {
+    const csbarra = document.getElementsByClassName("barra-ests");
+
+    for (let i = 0; i < csbarra.length; i++) {
+        for (let x = 0; x < 10; x++) {
+
+            const linebar = document.createElement('span');
+            linebar.classList.add("line-bar");
+            linebar.style.width = "100%";
+            linebar.style.height = "10%";
+            linebar.style.borderTop = "solid .5px black";
+
+            csbarra[i].appendChild(linebar);
+        }
+    }
+
+}
+
+creaBarras();
+
+// Consulta la api de pokemon
 const fetchPokemon = async () => {
 
     let nombre = document.getElementById('nombrep');
@@ -52,7 +74,7 @@ const pokeImage = (url) => {
 const dataTypes = (types) => {
 
     const typesName = types.map((item) => item.type.name);
-    
+
     //  agregar un span por cada elemento de typesName
     typesName.forEach((type) => {
 
@@ -77,7 +99,7 @@ const pokeData = (abilities) => {
         const csability = document.getElementById("cont-abilities");
         csability.appendChild(span);
     })
-    
+
 }
 
 // Estadísticas
@@ -166,5 +188,9 @@ function llamaBoton() {
         if (event.key === "Enter") {
             document.getElementById("btn-buscar").click();
         }
-    }, {once: true});   // el envento se ejecuta una sola vez
+    }, { once: true });   // el envento se ejecuta una sola vez
 }
+
+// para que el boton no sea focusable
+const button = document.getElementById("btn-buscar");
+button.addEventListener("focus",() => button.blur());
