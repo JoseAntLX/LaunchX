@@ -309,10 +309,11 @@
     color: white;
     background-color: #006eff ;
     border-radius: 5px;
+    margin-top: 2px;
     align-items: center;
     padding: 2px 3px;
     margin-right: 5px;
-    font-size: .5em;
+    font-size: .6em;
     text-transform: uppercase;
     font-family: system-ui;
 }
@@ -332,7 +333,7 @@
     margin-top: 12%;
     position: absolute;
     width: 89%;
-    bottom: 3px;
+    bottom: 5px;
 }
 
 #estadisticas>*{

@@ -11,6 +11,7 @@ function creaBarras() {
             linebar.classList.add("line-bar");
             linebar.style.width = "100%";
             linebar.style.height = "10%";
+            linebar.style.zIndex = "2";
             linebar.style.borderTop = "solid .5px black";
 
             csbarra[i].appendChild(linebar);
@@ -106,22 +107,25 @@ const pokeData = (abilities) => {
 const pokeStats = (stadistics) => {
 
     //Lista de los elementos de las caracteristicas 
-    const pokeStat = document.querySelectorAll('#hp, #attack, #defense, #special-attack, #special-defense, #speed');
+    const pokeStat = document.getElementsByClassName("barra-ests");
 
     // Obtencion de cada una de las caracteristicas desde fetchPokemon
     const statsName = stadistics.map((item) => item.base_stat);
 
     // Pasa esos elementos al dom agregandolos individualmente
-    pokeStat.forEach((stat, i) => {
+    statsName.forEach((stat, i) => {
 
         // Creando el elemento span
-        const spanp = document.createElement("span");
-        spanp.classList.add("cspan");
+        const span = document.createElement("span");
+        span.classList.add("cspan");
 
-        spanp.textContent = statsName[i];
-        stat.appendChild(spanp);
+        span.style.width = "100%";
+        span.style.height = `${stat * 0.38}%`;
+        span.style.backgroundColor = "#006eff"
+        span.style.position = "absolute"
+        span.style.bottom = "0"
+        pokeStat[i].appendChild(span);
     });
-
 }
 
 
@@ -140,20 +144,11 @@ function limpiaDatos() {
     const nombre = document.getElementById('nombrep');
     nombre.innerHTML = "";
 
-    // Habilidades
-    // const pokeAbilities = document.getElementById("abilities");
-    // pokeAbilities.innerHTML = "";
-
     // Imagen
     const pokePhoto = document.getElementById("img-poke");
     pokePhoto.src = "";
 
-    // Tipo
-    // const pokeType = document.getElementById('pokeType');
-    // pokeType.innerHTML = "";
-
     // Estadisticas
-
     const spans = document.querySelectorAll(".cspan");
     for (let i = 0; i < spans.length; i++) {
         spans[i].remove();
@@ -193,4 +188,4 @@ function llamaBoton() {
 
 // para que el boton no sea focusable
 const button = document.getElementById("btn-buscar");
-button.addEventListener("focus",() => button.blur());
+button.addEventListener("focus", () => button.blur());
