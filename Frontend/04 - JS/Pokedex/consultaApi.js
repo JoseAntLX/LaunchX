@@ -1,4 +1,6 @@
 
+// Variable global para el id del pokemon
+let gID = 0;
 
 // Agrega los divs de la barra de 
 function creaBarras() {
@@ -52,6 +54,7 @@ const fetchPokemon = async () => {
         let pokeType = data.types;
         let pokeStadists = data.stats;
         let pokeMov = data.moves;
+        gID = data.id;
         pokeImage(pokeImg, pokeImg2);
         pokeData(pokeInfo);
         dataTypes(pokeType);
@@ -64,9 +67,14 @@ const fetchPokemon = async () => {
 const pokeImage = (url, url2) => {
     const pokePhoto = document.getElementById("img-poke");
 
+    pokePhoto.style.height = "70%";
+    pokePhoto.style.objectFit = "cover";
+    pokePhoto.style.top = "10%";
+    pokePhoto.style.position = "absolute";
+
     // comprueba cual de las imagenes esta disponible
-    if (url2 === null) {
-        if (url === null) {
+    if (url === null) {
+        if (url2 === null) {
             pokePhoto.src = "./Img/pokeball.png"
         }
         else {
@@ -76,11 +84,18 @@ const pokeImage = (url, url2) => {
     else {
         pokePhoto.src = url;
     }
+    if (url !== null) {
+        pokePhoto.src = url;
+    }
+    else if (url2 !== null) {
+        pokePhoto.src = url2;
+        pokePhoto.style.top = "0";
+        pokePhoto.style.height = "80%";
+    }
+    else {
+        pokePhoto.src = "./Img/pokeball.png"
+    }
 
-    pokePhoto.style.height = "70%";
-    pokePhoto.style.objectFit = "cover";
-    pokePhoto.style.top = "10%";
-    pokePhoto.style.position = "absolute";
 }
 
 // Tipo
@@ -150,7 +165,7 @@ const pokeMoves = (moves) => {
     movesName.forEach((move) => {
         const span = document.createElement("span");
         span.classList.add("cspan");
-        
+
         span.textContent = move.replace('-', ' ');
         pokeMove.appendChild(span);
     })
@@ -195,6 +210,33 @@ function clicB(obj) {
 // Deshabilitar el boton si no se ha ingresado nada
 function validarInput() {
     document.getElementById('btn-buscar').disabled = !document.getElementById('pokeInput').value.length;
+}
+
+// Funcion para aumentar el valor del input
+function aumentaId() {
+
+    // pasarle el id + 1 al input
+    const pokeInput = document.getElementById("pokeInput");
+    if (gID < 1000) {
+        pokeInput.value = gID + 1;
+    }
+
+    // consulta
+    fetchPokemon();
+}
+
+// Funcion para disminuir el valor del input
+function disminuyeId() {
+
+    // pasarle el id + 1 al input
+    const pokeInput = document.getElementById("pokeInput");
+
+    if (gID > 1) {
+        pokeInput.value = gID - 1;
+    }
+
+    // consulta
+    fetchPokemon();
 }
 
 // cuando se pulse enter en el input de click al boton
