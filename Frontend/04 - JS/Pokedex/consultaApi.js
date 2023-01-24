@@ -34,7 +34,8 @@ const fetchPokemon = async () => {
 
     let data = await fetch(url).then((res) => {
         if (res.status != "200") {
-            pokeImage("./Img/pokemon-sad.gif");
+            const pokePhoto = document.getElementById("img-poke");
+            pokePhoto.src = "./Img/pokemon-sad.gif"
             nombre.innerHTML = "No encontrado";
         }
         else {
@@ -46,11 +47,12 @@ const fetchPokemon = async () => {
         console.log(data);
         nombre.innerHTML = data.name;
         let pokeImg = data.sprites.other.dream_world.front_default;
+        let pokeImg2 = data.sprites.other["official-artwork"].front_default;
         let pokeInfo = data.abilities;
         let pokeType = data.types;
         let pokeStadists = data.stats;
         let pokeMov = data.moves;
-        pokeImage(pokeImg);
+        pokeImage(pokeImg, pokeImg2);
         pokeData(pokeInfo);
         dataTypes(pokeType);
         pokeStats(pokeStadists);
@@ -59,11 +61,21 @@ const fetchPokemon = async () => {
 }
 
 // Imagen
-const pokeImage = (url) => {
+const pokeImage = (url, url2) => {
     const pokePhoto = document.getElementById("img-poke");
 
-    // Condicional, si el pokemon no tiene foto
-    url === null ? pokePhoto.src = "./Img/pokeball.png" : pokePhoto.src = url;
+    // comprueba cual de las imagenes esta disponible
+    if (url2 === null) {
+        if (url === null) {
+            pokePhoto.src = "./Img/pokeball.png"
+        }
+        else {
+            pokePhoto.src = url;
+        }
+    }
+    else {
+        pokePhoto.src = url;
+    }
 
     pokePhoto.style.height = "70%";
     pokePhoto.style.objectFit = "cover";
@@ -96,7 +108,7 @@ const pokeData = (abilities) => {
         const span = document.createElement("span");
         span.classList.add("cspan", "bar-span");
 
-        span.textContent = ability;
+        span.textContent = ability.replace('-', ' ');
         const csability = document.getElementById("cont-abilities");
         csability.appendChild(span);
     })
@@ -133,7 +145,15 @@ const pokeStats = (stadistics) => {
 const pokeMoves = (moves) => {
     const pokeMove = document.getElementById('pokeMovs');
     const movesName = moves.map((item) => item.move.name);
-    pokeMove.innerHTML = movesName;
+    // pokeMove.innerHTML = movesName;
+
+    movesName.forEach((move) => {
+        const span = document.createElement("span");
+        span.classList.add("cspan");
+        
+        span.textContent = move.replace('-', ' ');
+        pokeMove.appendChild(span);
+    })
 }
 
 

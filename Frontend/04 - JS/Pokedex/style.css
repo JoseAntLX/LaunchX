@@ -205,7 +205,7 @@
 
 }
 
-.circulo-cruz{
+.circulo-cruz {
     position: absolute;
     border: solid black 1px;
     width: 12px;
@@ -274,7 +274,7 @@
 }
 
 /* CUadro de info */
-.poke-info1-r{
+.poke-info1-r {
     padding: 10px 15px;
     margin-left: 14%;
     display: flex;
@@ -286,16 +286,16 @@
     position: relative;
 }
 
-.poke-info1-r>*{
+.poke-info1-r>* {
     display: flex;
 }
 
-.poke-info1-r>*>*{
+.poke-info1-r>*>* {
     display: flex;
 }
 
 /* Encabezado de tipo */
-.info1-enc{
+.info1-enc {
     font-family: system-ui;
     color: rgb(255, 196, 0);
     font-weight: 500;
@@ -305,38 +305,41 @@
 }
 
 /* Spans tipo poke */
-#cont-type>span, #cont-abilities>span{
+#cont-type>span,
+#cont-abilities>span {
     color: white;
-    background-color: #006eff ;
+    background-color: #006eff;
     border-radius: 5px;
     margin-top: 2px;
     align-items: center;
     padding: 2px 3px;
+    font-weight: 400;
+    letter-spacing: 1px;
     margin-right: 5px;
-    font-size: .6em;
+    font-size: .5em;
     text-transform: uppercase;
     font-family: system-ui;
 }
 
-#cont-abilities{
+#cont-abilities {
     margin-top: 10px;
     flex-wrap: wrap;
 }
 
-#cont-abilities>span{
+#cont-abilities>span {
     background-color: #147c24;
 }
 
 /* Estadisticas */
 
-#estadisticas{
+#estadisticas {
     margin-top: 12%;
     position: absolute;
     width: 89%;
     bottom: 5px;
 }
 
-#estadisticas>*{
+#estadisticas>* {
     width: 16.6%;
     display: flex;
     align-items: center;
@@ -344,7 +347,7 @@
 }
 
 /* Barra de estadisticas */
-.barra-ests{
+.barra-ests {
     width: 50%;
     height: 40px;
     background-color: white;
@@ -353,15 +356,79 @@
     position: relative;
 }
 
-.enc-stat{
+.enc-stat {
     font-size: x-small;
     color: #ffc107;
     font-weight: 500;
     text-align: center;
 }
 
+/* Contenedor de los movimientos */
+.cont-movs {
+    margin-left: 14%;
+    margin-top: 8px;
+    height: 25%;
+    width: 66%;
+}
+
+.enc-movs {
+    margin-bottom: 5px;
+}
+
 /* Textaarea de los movimientos */
 #pokeMovs {
-    resize: none;
-    margin-left: 14%;
+    background-color: #1860b4;
+    overflow-y: scroll;
+    gap: 1px;
+    height: 100%;
+    overflow-x: hidden;
+    border-radius: 7px;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto;
+}
+
+/* Scrollbar */
+#pokeMovs::-webkit-scrollbar {
+    width: 7px;
+    background-color: #1861b400;
+}
+
+#pokeMovs::-webkit-scrollbar-thumb {
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+
+
+/* Firefox */
+#pokeMovs::-moz-scrollbar {
+    width: 10px;
+    background-color: #1860b4;
+}
+
+#pokeMovs::-moz-scrollbar-thumb {
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+
+
+#pokeMovs>* {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    height: 43px;
+    color: #122046;
+    letter-spacing: 1px;
+    font-family: system-ui, monospace;
+    font-size: 0.6em;
+    font-weight: 800;
+    justify-self: center;
+    text-transform: uppercase;
+    width: 100%;
+    background-color: #31a7f1;
 }
