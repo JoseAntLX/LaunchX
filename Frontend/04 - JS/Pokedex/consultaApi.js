@@ -54,12 +54,15 @@ const fetchPokemon = async () => {
         let pokeType = data.types;
         let pokeStadists = data.stats;
         let pokeMov = data.moves;
+        let pokeAltura = data.height;
+        let pokePeso = data.weight;
         gID = data.id;
         pokeImage(pokeImg, pokeImg2);
         pokeData(pokeInfo);
         dataTypes(pokeType);
         pokeStats(pokeStadists);
         pokeMoves(pokeMov);
+        pokeAltPeso(pokeAltura, pokePeso);
     }
 }
 
@@ -169,6 +172,33 @@ const pokeMoves = (moves) => {
         span.textContent = move.replace('-', ' ');
         pokeMove.appendChild(span);
     })
+}
+
+// Altura y peso
+const pokeAltPeso = (altura, peso) => {
+    
+    const pokeAltura = document.getElementById("altura");
+
+    // Span para la altura
+    const spanA = document.createElement("span");
+    spanA.classList.add("cspan");
+    spanA.textContent = (altura * 0.1).toFixed(1) + " M";
+    spanA.style.color = "#ffc400";
+    spanA.style.fontFamily = "system-ui";
+    spanA.style.fontSize = ".7em";
+
+    const pokePeso = document.getElementById("peso");
+
+    // Span para la altura
+    const spanP = document.createElement("span");
+    spanP.classList.add("cspan");
+    spanP.textContent = (peso * 0.1).toFixed(1) + " Kg";
+    spanP.style.color = "#ffc400";
+    spanP.style.fontFamily = "system-ui";
+    spanP.style.fontSize = ".7em";
+
+    pokeAltura.appendChild(spanA);
+    pokePeso.appendChild(spanP);
 }
 
 

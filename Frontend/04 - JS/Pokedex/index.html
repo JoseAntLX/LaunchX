@@ -11,15 +11,17 @@
 
 <body>
     <header>
-
+        <img class="img-pokedex" src="./Img/pokedex-letras.png" alt="pokedex">
+        <a href="#" class="a-github">
+            <img class="github-ico" src="./Img/icons8-github-128.png" alt="icono github">
+        </a>
     </header>
 
 
     <main>
-        <h1>Consultando la API de Pokemon</h1>
-        <div class="cont-pokedesk">
+        <div class="cont-pokedex">
 
-            <div class="pokedesk">
+            <div class="pokedex">
                 <div class="poke-left">
                     <div class="botons-sup-l">
                         <div class="led-white">
@@ -38,7 +40,7 @@
                             <img id="img-poke" src="./Img/pokeball.png" alt="Imagen de Pokemon">
                             <p id="nombrep"></p>
                         </div>
-                        <input type="text" onkeypress="llamaBoton()" placeholder="Nombre del pokemon" id="pokeInput"
+                        <input type="text" onkeypress="llamaBoton()" placeholder="Nombre o # del pokemon" id="pokeInput"
                             autocomplete="off" oninput="validarInput()">
                     </div>
                     <div class="botons-inf-l">
@@ -47,8 +49,8 @@
                             <div class="circulo-cruz"></div>
                         </div>
                         <div class="rects-inf">
-                            <button onclick="aumentaId()" class="rect-1">+</button>
                             <button onclick="disminuyeId()" class="rect-2">-</button>
+                            <button onclick="aumentaId()" class="rect-1">+</button>
                         </div>
                         <button disabled id="btn-buscar" onclick="fetchPokemon(), clicB(this)">Buscar</button>
                         <div class="pantalla-verde"></div>
@@ -106,6 +108,26 @@
                     <div class="cont-movs">
                         <h2 class="info1-enc enc-movs">MOVIMIENTOS</h2>
                         <div  id="pokeMovs" cols="30" rows="10"></div>
+                    </div>
+                    <div class="btns-inf-r">
+                        <div class="larg-two">
+                            <div class="larg-b"></div>
+                            <div class="larg-b"></div>
+                        </div>
+                        <div class="sec-btns">
+                            <div class="white-two">
+                                <div class="line-w"></div>
+                            </div>
+                            <div class="cicle-r"></div>
+                        </div>
+                        <div class="lasts-p">
+                            <div id="altura">
+                                <p class="info1-enc p-pant2">ALTURA:</p>
+                            </div>
+                            <div id="peso">
+                                <p class="info1-enc p-pant2">PESO:</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

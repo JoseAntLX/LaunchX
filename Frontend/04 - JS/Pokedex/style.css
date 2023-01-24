@@ -2,34 +2,81 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
-
-
 * {
     margin: 0;
     padding: 0;
 }
 
-/* Contenedor del pokedesk */
-.cont-pokedesk {
-    margin-top: 40px;
+body{
+
+    background-image: url("./Img/fondo-bosque.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+header{
+    margin-top: 1%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* border-bottom: #006eff 1px solid; */
+    /* box-shadow: 0px 3px 12px 2px #006eff; */
+    /* background-color: #006eff3b; */
+    /* backdrop-filter: blur(4px); */
+}
+
+.img-pokedex{
+    margin: 0 20px;
+    width: 15%;
+    height: auto;
+}
+
+/* Enlace al proyecto */
+.a-github{
+    overflow: hidden;
+    margin: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    width: 50px;
+    height: 50px;
+    background-color: #ffffff;
+    border-radius: 30px;
+}
+
+.github-ico:hover{
+    transform: scale(1.2);
+}
+
+.github-ico{
+    height: 82px;
+    width: auto;
+}
+
+/* Contenedor del pokedex */
+.cont-pokedex {
+    margin-top: 1%;
+    background-color: transparent;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 /*  */
-.pokedesk {
+.pokedex {
     padding: 20px;
     padding-top: 10px;
     display: flex;
     width: 55%;
     height: 500px;
-    background-image: url('./Img/pokedex-fondo.jpg');
+    background-image: url('./Img/pokedex-fondo.png');
     background-size: contain;
     background-repeat: no-repeat;
 }
 
-/* Parte derecha del pokedesk */
+/* Parte derecha del pokedex */
 .poke-left {
     width: 46%;
 }
@@ -273,7 +320,7 @@
 }
 
 
-/* Parte izquierda del pokedesk */
+/* Parte izquierda del pokedex */
 .poke-right {
     width: 54%;
     padding-top: 20%;
@@ -435,3 +482,81 @@
     background-color: #31a7f1;
 }
 
+/* Botones de la parte inferior derecha */
+.btns-inf-r{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 66%;
+    margin-left: 14%;
+    margin-top: 19px;
+}
+
+/* ------------------ */
+.larg-two{
+    display: flex;
+    align-self: end;
+}
+.larg-b{
+    width: 40px;
+    height: 8px;
+    margin-left: 5px;
+    background-color: hwb(0deg 20% 69%);
+    border-radius: 4px;
+}
+
+/* ------------------- */
+.sec-btns{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+    
+.white-two{
+    
+    margin-left: 2px;
+    width: 96px;
+    height: 30px;
+    background-color: white;
+    border-radius: 3px;
+    position: relative;
+    box-shadow: -2px 2px 0 2px gray;
+}
+
+.line-w{
+    position: absolute;
+    width: 1px;
+    height: 100%;
+    background-color: gray;
+    left: 50%;
+}
+
+.cicle-r{
+    width: 20px;
+    height: 20px;
+    border-radius: 20px;
+    background-color: #fddd23;
+    box-shadow: -2px -2px 0px 4px #8b7910 inset ;
+}
+
+/* Pantallas finales altura y peso */
+.lasts-p{
+    margin-top: 13px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#altura, #peso{
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    width: 40%;
+    height: 25px;
+    background-color: #032d29;
+    border-radius: 5px;
+}
+
+.p-pant2{
+    align-self: center;
+    margin: 0 6px 0 3px;
+}
