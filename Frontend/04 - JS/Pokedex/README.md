@@ -1,5 +1,7 @@
 # Práctica JS
 
+[Página hosteada](https://pokedesk-joseantlx.netlify.app/)
+
 Hacer una pokedex consultando la API, esta debe tener los siguientes requerimientos:
 
 - Maquetación del sitio con HTML
