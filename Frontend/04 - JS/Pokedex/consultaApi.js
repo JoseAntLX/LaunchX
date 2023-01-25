@@ -37,8 +37,9 @@ const fetchPokemon = async () => {
     let data = await fetch(url).then((res) => {
         if (res.status != "200") {
             const pokePhoto = document.getElementById("img-poke");
-            pokePhoto.src = "./Img/pokemon-sad.gif"
+            pokePhoto.src = "./Img/pokemon-sad.jpg"
             nombre.innerHTML = "No encontrado";
+            nombre.style.color = "white";
         }
         else {
             return res.json();
@@ -47,6 +48,7 @@ const fetchPokemon = async () => {
 
     if (data) {
         console.log(data);
+        nombre.style.color = "black";
         nombre.innerHTML = data.name;
         let pokeImg = data.sprites.other.dream_world.front_default;
         let pokeImg2 = data.sprites.other["official-artwork"].front_default;
