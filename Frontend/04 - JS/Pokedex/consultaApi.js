@@ -78,17 +78,6 @@ const pokeImage = (url, url2) => {
     pokePhoto.style.position = "absolute";
 
     // comprueba cual de las imagenes esta disponible
-    if (url === null) {
-        if (url2 === null) {
-            pokePhoto.src = "./Img/pokeball.png"
-        }
-        else {
-            pokePhoto.src = url;
-        }
-    }
-    else {
-        pokePhoto.src = url;
-    }
     if (url !== null) {
         pokePhoto.src = url;
     }
