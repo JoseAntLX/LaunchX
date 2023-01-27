@@ -22,110 +22,118 @@
         <div class="cont-pokedex">
 
             <div class="pokedex">
-                <div class="poke-left">
-                    <div class="botons-sup-l">
-                        <div class="led-white">
-                            <div class="led-blue">
-                                <div class="brillo-led"></div>
+
+                <div class="poke-left-fondo">
+
+                    <div class="poke-left">
+                        <div class="botons-sup-l">
+                            <div class="led-white">
+                                <div class="led-blue">
+                                    <div class="brillo-led"></div>
+                                </div>
+                            </div>
+                            <div class="leds-smalls">
+                                <div class="led-red"></div>
+                                <div class="led-yellow"></div>
+                                <div class="led-yellow"></div>
                             </div>
                         </div>
-                        <div class="leds-smalls">
-                            <div class="led-red"></div>
-                            <div class="led-yellow"></div>
-                            <div class="led-yellow"></div>
+                        <div class="poke-central">
+                            <div class="c-poke-img">
+                                <img id="img-poke" src="./Img/pokeball.png" alt="Imagen de Pokemon">
+                                <p id="nombrep"></p>
+                            </div>
+                            <input type="text" onkeypress="llamaBoton()" placeholder="Nombre o # del pokemon" id="pokeInput"
+                                autocomplete="off" oninput="validarInput()">
                         </div>
-                    </div>
-                    <div class="poke-central">
-                        <div class="c-poke-img">
-                            <img id="img-poke" src="./Img/pokeball.png" alt="Imagen de Pokemon">
-                            <p id="nombrep"></p>
+                        <div class="botons-inf-l">
+                            <div class="cruz"></div>
+                            <div class=" cruz sombra-cruz">
+                                <div class="circulo-cruz"></div>
+                            </div>
+                            <div class="rects-inf">
+                                <button onclick="disminuyeId()" id="rect-2">-</button>
+                                <button onclick="aumentaId()" id="rect-1">+</button>
+                            </div>
+                            <button disabled id="btn-buscar" onclick="fetchPokemon(), clicB(this)">Buscar</button>
+                            <div class="pantalla-verde"></div>
                         </div>
-                        <input type="text" onkeypress="llamaBoton()" placeholder="Nombre o # del pokemon" id="pokeInput"
-                            autocomplete="off" oninput="validarInput()">
-                    </div>
-                    <div class="botons-inf-l">
-                        <div class="cruz"></div>
-                        <div class=" cruz sombra-cruz">
-                            <div class="circulo-cruz"></div>
-                        </div>
-                        <div class="rects-inf">
-                            <button onclick="disminuyeId()" class="rect-2">-</button>
-                            <button onclick="aumentaId()" class="rect-1">+</button>
-                        </div>
-                        <button disabled id="btn-buscar" onclick="fetchPokemon(), clicB(this)">Buscar</button>
-                        <div class="pantalla-verde"></div>
                     </div>
                 </div>
-                <div class="poke-right">
-                    <div class="poke-info1-r">
 
-                        <div id="cont-type">
-                            <h4 class="type-enc info1-enc">TIPO: </h4>
-                        </div>
+                <div class="poke-right-fondo">
 
-                        <div id="cont-abilities">
-                            <h4 class="abilities-enc info1-enc">HABILIDADES: </h4>
-
-                        </div>
-
-                        <div class="cont-estats">
-                            <div id="estadisticas">
-
-                                <div id="hp">
-                                    <div class="barra-ests"></div>
-                                    <h5 class="enc-stat">HP</h5>
-                                </div>
-
-                                <div id="attack">
-                                    <div class="barra-ests">
+                    <div class="poke-right">
+                        <div class="poke-info1-r">
+    
+                            <div id="cont-type">
+                                <h4 class="type-enc info1-enc">TIPO: </h4>
+                            </div>
+    
+                            <div id="cont-abilities">
+                                <h4 class="abilities-enc info1-enc">HABILIDADES: </h4>
+    
+                            </div>
+    
+                            <div class="cont-estats">
+                                <div id="estadisticas">
+    
+                                    <div id="hp">
+                                        <div class="barra-ests"></div>
+                                        <h5 class="enc-stat">HP</h5>
                                     </div>
-                                    <h5 class="enc-stat">ATK</h5>
+    
+                                    <div id="attack">
+                                        <div class="barra-ests">
+                                        </div>
+                                        <h5 class="enc-stat">ATK</h5>
+                                    </div>
+    
+                                    <div id="defense">
+                                        <div class="barra-ests"></div>
+                                        <h5 class="enc-stat">DEF</h5>
+                                    </div>
+    
+                                    <div id="special-attack">
+                                        <div class="barra-ests"></div>
+                                        <h5 class="enc-stat">SP.ATK</h5>
+                                    </div>
+    
+                                    <div id="special-defense">
+                                        <div class="barra-ests"></div>
+                                        <h5 class="enc-stat">SP.DEF</h5>
+                                    </div>
+    
+                                    <div id="speed">
+                                        <div class="barra-ests"></div>
+                                        <h5 class="enc-stat">SPEED</h5>
+                                    </div>
+    
                                 </div>
-
-                                <div id="defense">
-                                    <div class="barra-ests"></div>
-                                    <h5 class="enc-stat">DEF</h5>
-                                </div>
-
-                                <div id="special-attack">
-                                    <div class="barra-ests"></div>
-                                    <h5 class="enc-stat">SP.ATK</h5>
-                                </div>
-
-                                <div id="special-defense">
-                                    <div class="barra-ests"></div>
-                                    <h5 class="enc-stat">SP.DEF</h5>
-                                </div>
-
-                                <div id="speed">
-                                    <div class="barra-ests"></div>
-                                    <h5 class="enc-stat">SPEED</h5>
-                                </div>
-
-                            </div>
-                        </div>  
-                    </div>
-                    <div class="cont-movs">
-                        <h2 class="info1-enc enc-movs">MOVIMIENTOS</h2>
-                        <div  id="pokeMovs" cols="30" rows="10"></div>
-                    </div>
-                    <div class="btns-inf-r">
-                        <div class="larg-two">
-                            <div class="larg-b"></div>
-                            <div class="larg-b"></div>
+                            </div>  
                         </div>
-                        <div class="sec-btns">
-                            <div class="white-two">
-                                <div class="line-w"></div>
-                            </div>
-                            <div class="cicle-r"></div>
+                        <div class="cont-movs">
+                            <h2 class="info1-enc enc-movs">MOVIMIENTOS</h2>
+                            <div  id="pokeMovs" cols="30" rows="10"></div>
                         </div>
-                        <div class="lasts-p">
-                            <div id="altura">
-                                <p class="info1-enc p-pant2">ALTURA:</p>
+                        <div class="btns-inf-r">
+                            <div class="larg-two">
+                                <div class="larg-b"></div>
+                                <div class="larg-b"></div>
                             </div>
-                            <div id="peso">
-                                <p class="info1-enc p-pant2">PESO:</p>
+                            <div class="sec-btns">
+                                <div class="white-two">
+                                    <div class="line-w"></div>
+                                </div>
+                                <div class="cicle-r"></div>
+                            </div>
+                            <div class="lasts-p">
+                                <div id="altura">
+                                    <p class="info1-enc p-pant2">ALTURA:</p>
+                                </div>
+                                <div id="peso">
+                                    <p class="info1-enc p-pant2">PESO:</p>
+                                </div>
                             </div>
                         </div>
                     </div>

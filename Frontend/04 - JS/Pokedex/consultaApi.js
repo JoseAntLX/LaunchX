@@ -167,7 +167,7 @@ const pokeMoves = (moves) => {
 
 // Altura y peso
 const pokeAltPeso = (altura, peso) => {
-    
+
     const pokeAltura = document.getElementById("altura");
 
     // Span para la altura
@@ -236,28 +236,50 @@ function validarInput() {
 // Funcion para aumentar el valor del input
 function aumentaId() {
 
+    // Deshabilitar el boton para que no haya consultas dobles
+    // Si la red esta lenta
+    const botonSubir = document.getElementById("rect-1");
+    const botonbajar = document.getElementById("rect-2");
+    botonSubir.disabled = true;
+    botonbajar.disabled = true;
+
     // pasarle el id + 1 al input
     const pokeInput = document.getElementById("pokeInput");
     if (gID < 1000) {
         pokeInput.value = gID + 1;
+        // consulta
+        fetchPokemon();
     }
 
-    // consulta
-    fetchPokemon();
+
+    // habilitandolos 
+    botonSubir.disabled = false;
+    botonbajar.disabled = false;
 }
 
 // Funcion para disminuir el valor del input
 function disminuyeId() {
+
+    // Deshabilitar el boton para que no haya consultas dobles
+    // Si la red esta lenta
+    const botonSubir = document.getElementById("rect-1");
+    const botonbajar = document.getElementById("rect-2");
+    botonSubir.disabled = true;
+    botonbajar.disabled = true;
 
     // pasarle el id + 1 al input
     const pokeInput = document.getElementById("pokeInput");
 
     if (gID > 1) {
         pokeInput.value = gID - 1;
+        // consulta
+        fetchPokemon();
     }
 
-    // consulta
-    fetchPokemon();
+
+    // habilitandolos 
+    botonSubir.disabled = false;
+    botonbajar.disabled = false;
 }
 
 // cuando se pulse enter en el input de click al boton

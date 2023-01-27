@@ -5,9 +5,10 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
-body{
+body {
 
     background-image: url("./Img/fondo-bosque.jpg");
     background-repeat: no-repeat;
@@ -15,7 +16,7 @@ body{
     height: 100vh;
 }
 
-header{
+header {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -25,14 +26,14 @@ header{
     /* backdrop-filter: blur(4px); */
 }
 
-.img-pokedex{
+.img-pokedex {
     margin: 0 20px;
     width: 15%;
     height: auto;
 }
 
 /* Enlace al proyecto */
-.a-github{
+.a-github {
     overflow: hidden;
     margin: 0 20px;
     display: flex;
@@ -45,11 +46,11 @@ header{
     border-radius: 30px;
 }
 
-.github-ico:hover{
+.github-ico:hover {
     transform: scale(1.2);
 }
 
-.github-ico{
+.github-ico {
     height: 82px;
     width: auto;
 }
@@ -65,19 +66,25 @@ header{
 
 /*  */
 .pokedex {
-    padding: 20px;
-    padding-top: 10px;
     display: flex;
-    width: 55%;
-    height: 500px;
-    background-image: url('./Img/pokedex-fondo.png');
-    background-size: contain;
+    justify-content: center;
+    width: 68%;
+}
+
+.poke-left-fondo {
+    width: 410px;
+    height: 550px;
+    background-image: url(./Img/pokedex-fondo-left.png);
+    background-position: initial;
     background-repeat: no-repeat;
+    background-size: contain;
+
 }
 
 /* Parte derecha del pokedex */
 .poke-left {
-    width: 46%;
+    padding: 13px 75px 13px 35px;
+    height: 100%;
 }
 
 /* Leds de la parte superior */
@@ -86,7 +93,7 @@ header{
 }
 
 .led-white {
-    margin-left: 10px;
+    margin-left: 1%;
     border-radius: 40px;
     width: 75px;
     height: 75px;
@@ -120,8 +127,8 @@ header{
 .leds-smalls {
     display: flex;
     justify-content: space-evenly;
-    margin-left: 3px;
-    margin-top: 5px;
+    margin-left: 1%;
+    margin-top: 1%;
 }
 
 .leds-smalls>div {
@@ -142,23 +149,21 @@ header{
 
 /* Pantalla principal */
 .poke-central {
-    margin: 5%;
-    margin-top: 29%;
     background-color: lightgray;
-    width: 65%;
-    margin-top: 10%;
+    margin-top: 12%;
     box-shadow: -5px 5px 0px #6c6c6c;
-    height: 36%;
+    height: 54%;
     padding: 10%;
-    padding-bottom: 15%;
     border-radius: 10px;
+    display: flex;
+    flex-direction: column;
 }
 
 /* Contenedor de la imagen */
 .c-poke-img {
-    height: 95%;
+    height: 100%;
     display: flex;
-    background-image: url('./Img/paisaje.jpg');
+    background-image: url(./Img/paisaje.jpg);
     background-size: cover;
     align-items: center;
     flex-direction: column;
@@ -180,16 +185,18 @@ header{
     text-transform: capitalize;
     text-align: center;
     font-family: 'Press Start 2P', Arial;
-    font-size: small;
+    font-size: .8em;
 }
 
 #pokeInput {
     margin-top: 17px;
+    width: 75%;
     height: 25px;
     position: relative;
     padding-left: 5px;
-    left: 56px;
+    /* right: 1px; */
     border: 0;
+    align-self: end;
     border-radius: 3px;
 }
 
@@ -199,9 +206,9 @@ header{
 
 /* Botones inferiores de la derecha */
 .botons-inf-l {
-    margin: 5%;
+    /* margin: 5%; */
     margin-top: 6%;
-    margin-right: 9%;
+    /* margin-right: 9%; */
     position: relative;
     display: flex;
     justify-content: end;
@@ -271,20 +278,20 @@ header{
     align-items: center;
 }
 
-.rect-1 {
+#rect-1 {
     display: flex;
     border: none;
     justify-content: center;
-    width: 55px;
+    width: 45%;
     height: 14px;
     border-radius: 22px;
     background-color: #3688f9;
     color: white;
 }
 
-.rect-2 {
+#rect-2 {
     border: none;
-    width: 55px;
+    width: 45%;
     height: 14px;
     border-radius: 22px;
     background-color: #ff0000;
@@ -293,14 +300,14 @@ header{
 
 /* Boton de busqueda */
 #btn-buscar {
+    height: 40%;
+    width: 17%;
     color: white;
     background-color: #222222;
     border: 0;
     margin-left: 15px;
     border-radius: 25px;
     padding: 18px 5px;
-    height: 51px;
-    width: 51px;
     box-shadow: -3px 4px 0px 4px black;
 }
 
@@ -309,8 +316,8 @@ header{
 }
 
 .pantalla-verde {
-    width: 105px;
-    height: 42px;
+    width: 35%;
+    height: 55%;
     position: absolute;
     background-color: #55ab62;
     top: 50px;
@@ -318,21 +325,32 @@ header{
     border-radius: 6px;
 }
 
+/* Fondo de la derecha */
+.poke-right-fondo {
+    width: 362px;
+    height: auto;
+    background-image: url("./Img/pokedex-fondo-right.png");
+    background-position: initial;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+}
 
 /* Parte izquierda del pokedex */
 .poke-right {
-    width: 54%;
-    padding-top: 20%;
+    padding-top: 45%;
+    width: 90%;
+    height: 99%;
+    padding: 160px 20px 20px 20px;
 }
 
 /* CUadro de info */
 .poke-info1-r {
     padding: 10px 15px;
-    margin-left: 14%;
     display: flex;
     flex-direction: column;
-    width: 59%;
-    height: 34%;
+    width: 100%;
+    height: 40%;
     border-radius: 10px;
     background-color: #032d29;
     position: relative;
@@ -413,14 +431,15 @@ header{
     color: #ffc107;
     font-weight: 500;
     text-align: center;
+    margin-top: 2px;
 }
 
 /* Contenedor de los movimientos */
 .cont-movs {
-    margin-left: 14%;
-    margin-top: 8px;
+    /* margin-left: 14%; */
+    margin-top: 17px;
     height: 25%;
-    width: 66%;
+    width: 100%;
 }
 
 .enc-movs {
@@ -432,7 +451,7 @@ header{
     background-color: #1860b4;
     overflow-y: scroll;
     gap: 1px;
-    height: 90%;
+    height: 80px;
     overflow-x: hidden;
     border-radius: 7px;
     display: grid;
@@ -449,8 +468,8 @@ header{
 }
 
 #pokeMovs::-webkit-scrollbar-thumb {
-  background-color: #fff;
-  border-radius: 10px;
+    background-color: #fff;
+    border-radius: 10px;
 }
 
 /* Firefox */
@@ -460,8 +479,8 @@ header{
 }
 
 #pokeMovs::-moz-scrollbar-thumb {
-  background-color: #fff;
-  border-radius: 10px;
+    background-color: #fff;
+    border-radius: 10px;
 }
 
 #pokeMovs>* {
@@ -479,24 +498,25 @@ header{
     text-transform: uppercase;
     width: 100%;
     background-color: #31a7f1;
+    padding: 0 5px;
 }
 
 /* Botones de la parte inferior derecha */
-.btns-inf-r{
+.btns-inf-r {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 66%;
-    margin-left: 14%;
-    margin-top: 19px;
+    width: 100%;
+    margin-top: 24px;
 }
 
 /* ------------------ */
-.larg-two{
+.larg-two {
     display: flex;
     align-self: end;
 }
-.larg-b{
+
+.larg-b {
     width: 40px;
     height: 8px;
     margin-left: 5px;
@@ -505,14 +525,14 @@ header{
 }
 
 /* ------------------- */
-.sec-btns{
+.sec-btns {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
 }
-    
-.white-two{
-    
+
+.white-two {
+
     margin-left: 2px;
     width: 96px;
     height: 30px;
@@ -522,7 +542,7 @@ header{
     box-shadow: -2px 2px 0 2px gray;
 }
 
-.line-w{
+.line-w {
     position: absolute;
     width: 1px;
     height: 100%;
@@ -530,22 +550,23 @@ header{
     left: 50%;
 }
 
-.cicle-r{
+.cicle-r {
     width: 20px;
     height: 20px;
     border-radius: 20px;
     background-color: #fddd23;
-    box-shadow: -2px -2px 0px 4px #8b7910 inset ;
+    box-shadow: -2px -2px 0px 4px #8b7910 inset;
 }
 
 /* Pantallas finales altura y peso */
-.lasts-p{
+.lasts-p {
     margin-top: 13px;
     display: flex;
     justify-content: space-between;
 }
 
-#altura, #peso{
+#altura,
+#peso {
     display: flex;
     align-items: center;
     padding: 5px;
@@ -555,7 +576,94 @@ header{
     border-radius: 5px;
 }
 
-.p-pant2{
+.p-pant2 {
     align-self: center;
     margin: 0 6px 0 3px;
+}
+
+
+@media screen and (max-width: 720px) {
+
+    .img-pokedex {
+        width: 25%;
+    }
+
+    .poke-right-fondo{
+        display: none;
+    }
+
+    .poke-left {
+        padding: 7px 66px 13px 31px;
+    }
+
+    .poke-central {
+        margin-top: 16%;
+    }
+}
+
+@media screen and (max-width: 870px) {
+
+    .poke-central {
+        height: 56%;
+    }
+
+    .botons-inf-l {
+        margin-top: 8%;
+    }
+
+    .cruz {
+        height: 69px;
+    }
+
+    .cruz::after {
+        left: -25px;
+        top: 25px;
+        width: 69px;
+    }
+
+    .pantalla-verde{
+        top: 56%;
+        left: 36%;
+        width: 38%;
+        height: 55%;
+    }
+}
+
+@media screen and (max-width: 960px) {
+
+    .led-white {
+        margin-left: 0;
+        width: 65px;
+        height: 65px;
+    }
+
+    .led-blue {
+        top: 5px;
+        left: 8px;
+        width: 53px;
+        height: 53px;
+    }
+
+    .poke-central {
+        margin-top: 15%;
+    }
+}
+
+@media screen and (max-width: 1160px) {
+    .pokedex {
+        width: 90%;
+    }
+
+    .cont-pokedex{
+        margin-top: 1%;
+    }
+
+    .img-pokedex {
+        width: 20%;
+    }
+
+    header{
+        height: 90px;
+    }    
+    
 }
