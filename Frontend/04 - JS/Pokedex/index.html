@@ -26,6 +26,10 @@
                 <div class="poke-left-fondo">
 
                     <div class="poke-left">
+                        <button id="btn-ver-mas" onclick="moreInfo()">
+                            <p>Ver más detalles</p>
+                            <img class="img-lupa" src="./Img/icon-buscar.png" alt="lupa">
+                            </button>
                         <div class="botons-sup-l">
                             <div class="led-white">
                                 <div class="led-blue">
@@ -43,8 +47,8 @@
                                 <img id="img-poke" src="./Img/pokeball.png" alt="Imagen de Pokemon">
                                 <p id="nombrep"></p>
                             </div>
-                            <input type="text" onkeypress="llamaBoton()" placeholder="Nombre o # del pokemon" id="pokeInput"
-                                autocomplete="off" oninput="validarInput()">
+                            <input type="text" onkeypress="llamaBoton()" placeholder="Nombre o # del pokemon"
+                                id="pokeInput" autocomplete="off" oninput="validarInput()">
                         </div>
                         <div class="botons-inf-l">
                             <div class="cruz"></div>
@@ -61,60 +65,60 @@
                     </div>
                 </div>
 
-                <div class="poke-right-fondo">
+                <div id="poke-right-fondo">
 
                     <div class="poke-right">
                         <div class="poke-info1-r">
-    
+
                             <div id="cont-type">
                                 <h4 class="type-enc info1-enc">TIPO: </h4>
                             </div>
-    
+
                             <div id="cont-abilities">
                                 <h4 class="abilities-enc info1-enc">HABILIDADES: </h4>
-    
+
                             </div>
-    
+
                             <div class="cont-estats">
                                 <div id="estadisticas">
-    
+
                                     <div id="hp">
                                         <div class="barra-ests"></div>
                                         <h5 class="enc-stat">HP</h5>
                                     </div>
-    
+
                                     <div id="attack">
                                         <div class="barra-ests">
                                         </div>
                                         <h5 class="enc-stat">ATK</h5>
                                     </div>
-    
+
                                     <div id="defense">
                                         <div class="barra-ests"></div>
                                         <h5 class="enc-stat">DEF</h5>
                                     </div>
-    
+
                                     <div id="special-attack">
                                         <div class="barra-ests"></div>
                                         <h5 class="enc-stat">SP.ATK</h5>
                                     </div>
-    
+
                                     <div id="special-defense">
                                         <div class="barra-ests"></div>
                                         <h5 class="enc-stat">SP.DEF</h5>
                                     </div>
-    
+
                                     <div id="speed">
                                         <div class="barra-ests"></div>
                                         <h5 class="enc-stat">SPEED</h5>
                                     </div>
-    
+
                                 </div>
-                            </div>  
+                            </div>
                         </div>
                         <div class="cont-movs">
                             <h2 class="info1-enc enc-movs">MOVIMIENTOS</h2>
-                            <div  id="pokeMovs" cols="30" rows="10"></div>
+                            <div id="pokeMovs" cols="30" rows="10"></div>
                         </div>
                         <div class="btns-inf-r">
                             <div class="larg-two">

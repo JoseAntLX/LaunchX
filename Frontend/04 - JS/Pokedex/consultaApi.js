@@ -172,7 +172,7 @@ const pokeAltPeso = (altura, peso) => {
 
     // Span para la altura
     const spanA = document.createElement("span");
-    spanA.classList.add("cspan");
+    spanA.classList.add("cspan", "data-inf");
     spanA.textContent = (altura * 0.1).toFixed(1) + " M";
     spanA.style.color = "#ffc400";
     spanA.style.fontFamily = "system-ui";
@@ -180,9 +180,9 @@ const pokeAltPeso = (altura, peso) => {
 
     const pokePeso = document.getElementById("peso");
 
-    // Span para la altura
+    // Span para el peso
     const spanP = document.createElement("span");
-    spanP.classList.add("cspan");
+    spanP.classList.add("cspan", "data-inf");
     spanP.textContent = (peso * 0.1).toFixed(1) + " Kg";
     spanP.style.color = "#ffc400";
     spanP.style.fontFamily = "system-ui";
@@ -294,3 +294,15 @@ function llamaBoton() {
 // para que el boton no sea focusable
 const button = document.getElementById("btn-buscar");
 button.addEventListener("focus", () => button.blur());
+
+
+// Para mostrar la parte derecha en movil
+
+function moreInfo() {
+    const right = document.getElementById("poke-right-fondo");
+    right.style.visibility = "visible";
+    
+    const btnMore = document.getElementById("btn-ver-mas");
+    btnMore.style.visibility = "hidden";
+    
+}
