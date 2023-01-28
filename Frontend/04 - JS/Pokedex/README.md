@@ -1,6 +1,6 @@
 # Práctica JS
 
-[Página hosteada](https://pokedesk-joseantlx.netlify.app/)
+[Página hosteada](https://pokedex-joseantlx.netlify.app/)
 
 Hacer una pokedex consultando la API, esta debe tener los siguientes requerimientos:
 
