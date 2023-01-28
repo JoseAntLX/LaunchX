@@ -299,10 +299,30 @@ button.addEventListener("focus", () => button.blur());
 // Para mostrar la parte derecha en movil
 
 function moreInfo() {
+    // Muestra la parte derecha
     const right = document.getElementById("poke-right-fondo");
     right.style.visibility = "visible";
-    
+
+    // Muestra el boton para volver
+    const btnVolver = document.getElementById("btn-volver");
+    btnVolver.style.visibility = "visible";
+
+    // Oculta el boton ver mas
     const btnMore = document.getElementById("btn-ver-mas");
     btnMore.style.visibility = "hidden";
-    
+
+}
+
+function volverInicio() {
+    // Oculta la parte derecha
+    const right = document.getElementById("poke-right-fondo");
+    right.style.visibility = "hidden";
+
+    // Oculta el boton para volver
+    const btnVolver = document.getElementById("btn-volver");
+    btnVolver.style.visibility = "hidden";
+
+    // Muestra el boton ver mas
+    const btnMore = document.getElementById("btn-ver-mas");
+    btnMore.style.visibility = "visible";
 }
