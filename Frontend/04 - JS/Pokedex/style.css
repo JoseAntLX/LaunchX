@@ -808,6 +808,13 @@ header {
 
 }
 
+@media screen and (max-width: 719px){
+    .poke-right {
+        height: 557px;
+    }
+
+}
+
 @media screen and (max-width: 460px) {
     .cont-pokedex {
         margin-top: 10%;
@@ -837,7 +844,7 @@ header {
     }
 
     .poke-info1-r {
-        height: 35%;
+        height: 44%;
     }
 
     .cont-movs {
@@ -849,7 +856,7 @@ header {
     }
 
     #btn-volver {
-        top: 13%;
+        top: 15%;
     }
 }
 
@@ -915,7 +922,7 @@ header {
 
     .poke-info1-r {
         padding: 10px 10px;
-        height: 30%;
+        height: 43%;
     }
 
     .barra-ests {
@@ -932,7 +939,7 @@ header {
     }
 
     .btns-inf-r {
-        margin-top: -12%;
+        margin-top: 3%;
     }
 
     .white-two {
@@ -949,8 +956,8 @@ header {
     }
 
     #btn-volver {
-        top: 11%;
-        height: 8%;
+        top: 15%;
+        height: 10%;
         width: 19%;
     }
 
