@@ -29,7 +29,7 @@ const fetchPokemon = async () => {
 
     let nombre = document.getElementById('nombrep');
     let pokeInput = document.getElementById('pokeInput');
-    let pokeName = pokeInput.value;
+    let pokeName = pokeInput.value.toLowerCase();
 
     const url = `https://pokeapi.co/api/v2/pokemon/${pokeName}`;
     limpiaDatos();
