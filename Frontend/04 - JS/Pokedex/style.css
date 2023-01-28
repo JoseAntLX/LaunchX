@@ -789,7 +789,7 @@ header {
 
     .poke-right {
         width: 100%;
-        height: 620px;
+        height: 546px;
         padding-right: 8%;
     }
 
@@ -909,6 +909,9 @@ header {
     #poke-right-fondo {
         width: 295px;
     }
+    .poke-right {
+        height: 467px;
+    }
 
     .poke-info1-r {
         padding: 10px 10px;
@@ -950,7 +953,8 @@ header {
         height: 8%;
         width: 19%;
     }
-    #btn-volver>p{
+
+    #btn-volver>p {
         font-size: .9em;
     }
 }
@@ -1114,13 +1118,15 @@ header {
         width: 48%;
         height: 20px;
     }
+
     #btn-volver {
         top: 16%;
         height: 8%;
         width: 19%;
         border-radius: 8px;
     }
-    #btn-volver>p{
+
+    #btn-volver>p {
         font-size: .5em;
     }
 }
